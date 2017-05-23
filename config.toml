@@ -1,14 +1,15 @@
-baseurl = "https://docs.flyntwp.com/"
+baseurl = "."
 languageCode = "en-us"
 title = "Flynt Framework"
-theme = "hugo-material-docs"
 metadataformat = "yaml"
 canonifyurls = true
-googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = ""
 
 [params]
   # General information
-  author = "Bleech GmbH"
+  author = "bleech GmbH"
   description = "The component based WordPress framework for development teams and their clients."
   copyright = "Released under the MIT license"
 
@@ -17,86 +18,105 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   repo_url = "https://github.com/flyntwp/flynt-starter-theme"
 
   version = "0.1.0"
-  logo = "images/logo.jpg"
+  logo = "images/logo.jpeg"
   favicon = "favicon.ico"
 
   permalink = "#"
 
   # Custom assets
-  custom_css = [
-    'styles/website.css'
+  custom_css  = [
+    "styles/website.css",
+    "stylesheets/dropdown.css"
   ]
-  custom_js  = []
+  custom_js   = [
+    "javascripts/lunr.min.js",
+    "javascripts/version.js"
+  ]
 
   # Syntax highlighting theme
   highlight_css  = ""
 
   [params.palette]
-      primary = "teal"
-      accent  = "blue-grey"
+    primary = "teal"
+    accent  = "blue-grey"
 
     [params.font]
-      text = "Ubuntu"
-      code = "Ubuntu Mono"
-
+      text = "Roboto"
+      code = "Roboto Mono"
 
 [social]
   twitter = "flyntwp"
-  github  = "flyntwp"
-  email   = "flynt@bleech.de"
-
-[[menu.main]]
-  name   = "Documentation"
-  url    = "/"
-  weight = 1
-
-[[menu.main]]
-  name   = "Getting Started"
-  url    = "getting-started/"
-  weight = 10
-
-[[menu.main]]
-  name   = "Tutorial: Build your first Component"
-  url    = "tutorial/"
-  weight = 20
-
-[[menu.main]]
-  name   = "Components"
-  url    = "components/"
-  weight = 30
-
-[[menu.main]]
-  name   = "Features"
-  url    = "features/"
-  weight = 40
-
-[[menu.main]]
-  name   = "WordPress"
-  url    = "wordpress/"
-  weight = 50
-
-[[menu.main]]
-  name   = "Utils"
-  url    = "utils/"
-  weight = 60
-
-[[menu.main]]
-  name   = "Core"
-  url    = "core/"
-  weight = 70
-
-[[menu.main]]
-  name   = "CLI"
-  url    = "cli/"
-  weight = 80
-
-[[menu.main]]
-  name   = "Meta"
-  url    = "meta/"
-  weight = 90
+  # github  = "flyntwp"
+  # email   = "flynt@bleech.de"
 
 [blackfriday]
   smartypants	= true
   fractions = true
   smartDashes = true
   plainIDAnchors = true
+
+# Top Menu Items
+[[menu.main]]
+  name   = "Documentation"
+  url    = "/documentation/"
+  weight = 20
+
+[[menu.main]]
+  name   = "Tutorials"
+  url    = "/tutorials/"
+  weight = 30
+
+[[menu.main]]
+  name   = "Resources"
+  url    = "/resources/"
+  weight = 40
+
+# Side Menu Items, Parent should match the identifier of the Top Menu Item
+
+[[menu.main]]
+  name   = "Getting Started"
+  url    = "/documentation/getting-started/"
+  parent = "Documentation"
+  weight = 10
+
+[[menu.main]]
+  name   = "Components"
+  url    = "/documentation/components/"
+  parent = "Documentation"
+  weight = 20
+
+[[menu.main]]
+  name   = "Features"
+  url    = "/documentation/features/"
+  parent = "Documentation"
+  weight = 30
+
+[[menu.main]]
+  name   = "WordPress"
+  url    = "/documentation/wordpress/"
+  parent = "Documentation"
+  weight = 40
+
+[[menu.main]]
+  name   = "Utils"
+  url    = "/documentation/utils/"
+  parent = "Documentation"
+  weight = 50
+
+[[menu.main]]
+  name   = "Core"
+  url    = "/documentation/core/"
+  parent = "Documentation"
+  weight = 60
+
+[[menu.main]]
+  name   = "CLI"
+  url    = "/documentation/cli/"
+  parent = "Documentation"
+  weight = 70
+
+[[menu.main]]
+  name   = "Building your first Component"
+  url    = "/tutorials/building-your-first-component/"
+  parent = "Tutorials"
+  weight = 10

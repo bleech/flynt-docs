@@ -1,53 +1,63 @@
 {{ partial "head" . }}
 
-{{ if (eq (trim .Site.Params.provider " " | lower) "github") | and (isset .Site.Params "repo_url") }}
-	{{ $repo_id := replace .Site.Params.repo_url "https://github.com/" ""}}
-	{{ .Scratch.Set "repo_id" $repo_id }}
-{{ end }}
-
-<div class="backdrop">
-	<div class="backdrop-paper"></div>
+<div class="single-page">
+  {{ partial "nav" . }}
 </div>
 
-<input class="toggle" type="checkbox" id="toggle-drawer">
-<input class="toggle" type="checkbox" id="toggle-search">
-<label class="toggle-button overlay" for="toggle-drawer"></label>
+<div class="page documentation">
+    <div class="side-menu" id="side-menu">
+    {{ $currentNode := .}}
 
-<header class="header">
-	{{ partial "header" . }}
-</header>
+    {{ range .Site.Menus.main }}
+    <ul class="side-menu-list" data-parenturl="{{.URL}}" style="display: none;">
+      {{ range .Children }}
+      <li class="side-menu__item{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}{{if $currentNode.IsMenuCurrent "main" . }} active{{end}}">
+        <a href="{{.URL}}" class="side-menu__item__link">
+          <img class="side-menu__item__link__icon" src="/img/003-Small-icons/block-03.svg" alt="">
+          <p class="side-menu__item__link__text">{{ .Name }}</p>
+        </a>
 
-<main class="main">
-	<div class="drawer">
-		{{ partial "drawer" . }}
-	</div>
+        {{ if .HasChildren }}
+        {{if $currentNode.HasMenuCurrent "main" . }}
+        <ul class="side-menu__sub">
+          {{ range .Children }}
+          <li class="side-menu__sub__item{{if $currentNode.IsMenuCurrent "main" . }} active{{end}}">
+            <a id="menu-link-{{.URL}}" class="side-menu__sub__item__text" href="{{.URL}}" data-url="{{.URL}}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+    
+    
+    </div>
+    <div class="content">
 
-	<article class="article">
-		<div class="wrapper">
-			<h1>{{ .Title }} {{ if .IsDraft }} (Draft){{ end }}</h1>
+      <h1 class="content-header">{{ .Title }} {{ if .IsDraft }} (Draft){{ end }}</h1>
 
-			{{ .Content }}
+      <div id="versions-dropdown" class="dropdown">
+        <div class="dropdown__core">
+          <div class="dropdown__selected">
+            Selected version
+          </div>
+          <div class="dropdown__chevon">
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </div>
+        </div>
 
-			<aside class="copyright" role="note">
-				{{ with .Site.Params.copyright }}
-				&copy; {{ now.Format "2006" }} {{ . }}
-				{{ end }}
-			</aside>
+        <div class="dropdown__items">
 
-			<footer class="footer">
-				{{ partial "footer" . }}
-			</footer>
-		</div>
-	</article>
+        </div>
+      </div>
 
-	<div class="results" role="status" aria-live="polite">
-		<div class="scrollable">
-			<div class="wrapper">
-				<div class="meta"></div>
-				<div class="list"></div>
-			</div>
-		</div>
-	</div>
-</main>
+      <div class="markdowned">
+        {{ .Content }}
+      </div>
+    </div>
+</div>
 
-{{ partial "footer_js" . }}
+{{ partial "footer" .}}
