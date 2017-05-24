@@ -8,6 +8,8 @@ var env = require('./env.json');
 var inject = require('gulp-inject-string');
 var fs = require('fs');
 var del = require('del');
+var streamqueue = require('streamqueue');
+var cleanCSS = require('gulp-clean-css');
 
 var srcDir = './src';
 var destDir = './static';
@@ -27,8 +29,9 @@ gulp.task('sass:dev', ['copy'], function() {
     var cssStream = gulp.src(srcDir + '/styles/vendor/*.css')
         .pipe(concat('css-files.css'));
 
-    var mergedStream = merge(sassStream, cssStream)
+    var mergedStream = streamqueue({ objectMode: true }, cssStream, sassStream)
         .pipe(concat('style.css'))
+        .pipe(cleanCSS())
         .pipe(gulp.dest(destDir + '/styles'));
     return mergedStream;
 });
