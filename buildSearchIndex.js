@@ -4,7 +4,6 @@ const fs = require('fs');
 const lunr = require('lunr');
 const removeMd = require('remove-markdown');
 
-
 //Get content map
 const tree = dirTree('./content');
 
@@ -12,7 +11,6 @@ const base = './static/';
 
 //Prototypes
 String.prototype.contains = function(it) { return this.indexOf(it) != -1; };
-
 
 var allDocuments = [];
 transverseTree(tree.children);

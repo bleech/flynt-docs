@@ -439,9 +439,3 @@ function buildSearch() {
     return whole;
   }
 }
-
-
-
-
-
-

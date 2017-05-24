@@ -24,14 +24,8 @@ googleAnalytics = ""
   permalink = "#"
 
   # Custom assets
-  custom_css  = [
-    "styles/website.css",
-    "stylesheets/dropdown.css"
-  ]
-  custom_js   = [
-    "javascripts/lunr.min.js",
-    "javascripts/version.js"
-  ]
+  custom_css  = []
+  custom_js   = []
 
   # Syntax highlighting theme
   highlight_css  = ""

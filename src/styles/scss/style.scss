@@ -159,21 +159,21 @@ body {
 
     &--arrow {
       width: 30px;
-      background-image: url('../img/003-Small-icons/Red/Red-Arrow.svg');
+      background-image: url('../images/003-Small-icons/Red/Red-Arrow.svg');
     }
 
     &--arrow-white {
-      background-image: url('../img/003-Small-icons/White/Arrow-White.svg');
+      background-image: url('../images/003-Small-icons/White/Arrow-White.svg');
     }
 
     &--mail {
-      background-image: url('../img/003-Small-icons/White/Mail-White.svg');
+      background-image: url('../images/003-Small-icons/White/Mail-White.svg');
     }
   }
 
   &:hover {
     .button__icon--arrow {
-      background-image: url('../img/003-Small-icons/White/Arrow-White.svg');
+      background-image: url('../images/003-Small-icons/White/Arrow-White.svg');
     }
   }
 
@@ -916,7 +916,7 @@ body {
   .logo {
     height: 40px;
     width: 120px;
-    background-image: url('../img/005-vamp/Logo/logo-long-white.svg');
+    background-image: url('../images/005-vamp/Logo/logo-long-white.svg');
     background-size: contain;
   }
 
@@ -974,7 +974,7 @@ body {
 
 
   .logo {
-    background-image: url('../img/005-vamp/Logo/logo-long-colour.svg');
+    background-image: url('../images/005-vamp/Logo/logo-long-colour.svg');
   }
 
   .top-menu-item {
@@ -1218,7 +1218,7 @@ body {
     border-color: #FAAC19;
 
     .admonition-icon-image {
-      background-image: url("../img/003-Small-icons/Notes/note.svg");
+      background-image: url("../images/003-Small-icons/Notes/note.svg");
     }
 
     .admonition-title {
@@ -1231,7 +1231,7 @@ body {
     border-color: #F9B32E;
 
     .admonition-icon-image {
-      background-image: url("../img/003-Small-icons/Notes/warning.svg");
+      background-image: url("../images/003-Small-icons/Notes/warning.svg");
     }
 
     .admonition-title {
@@ -1244,7 +1244,7 @@ body {
     border-color: #1AA379;
 
     .admonition-icon-image {
-      background-image: url("../img/003-Small-icons/Notes/tip.svg");
+      background-image: url("../images/003-Small-icons/Notes/tip.svg");
     }
 
     .admonition-title {

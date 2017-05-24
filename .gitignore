@@ -1,4 +1,6 @@
 *.css.map
+static
+!static/.gitkeep
 .idea
 public
 node_modules

@@ -1,3 +1,4 @@
+// NOTE: not sure what this is
 function pegasus(t, e) {
     return e = new XMLHttpRequest, e.open("GET", t), t = [], e.onreadystatechange = e.then = function(n, o, i, r) {
         if (n && n.call && (t = [, n, o]), 4 == e.readyState && (i = t[0 | e.status / 200])) {
