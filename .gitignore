@@ -3,9 +3,7 @@ static
 .idea
 public
 node_modules
-
-# exception to the rule
-!themes/vamp-theme/.gitkeep
+layouts/partials/base-url.html
 
 # Compiled source #
 ###################
