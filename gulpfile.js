@@ -10,6 +10,8 @@ var fs = require('fs');
 var del = require('del');
 var streamqueue = require('streamqueue');
 var cleanCSS = require('gulp-clean-css');
+var uglify = require('gulp-uglify');
+var pump = require('pump');
 
 var srcDir = './src';
 var destDir = './static';
@@ -21,7 +23,7 @@ gulp.task('clean', function () {
     ])
 });
 
-gulp.task('sass:dev', ['copy'], function() {
+gulp.task('sass:dev', ['uglify'], function() {
     var sassStream = gulp.src(srcDir + '/styles/scss/style.scss')
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(autoprefixer({cascade: false}));
@@ -36,20 +38,19 @@ gulp.task('sass:dev', ['copy'], function() {
     return mergedStream;
 });
 
-var jsLibsBase = srcDir + '/scripts/vendor/';
-
-gulp.task('js', function() {
-    // TODO: update this to run uglify on main js as well (and remove it from copy)
-    // TODO: check if js files not listed here can be deleted
-    gulp.src([jsLibsBase + 'jquery-3.1.0.min.js', jsLibsBase + 'lunrjs.min.js', jsLibsBase + 'highlight.pack.js', jsLibsBase + 'debounce.min.js', jsLibsBase + 'clipboard.min.js', jsLibsBase + 'version.js'])
-        .pipe(gulp.dest(destDir + '/scripts/'));
-});
+gulp.task('uglify', ['copy'], function (cb) {
+    pump([
+            gulp.src(srcDir + '/scripts/**/*.js', { base: srcDir }),
+            uglify(),
+            gulp.dest(destDir)
+        ],
+        cb
+    );
+})
 
 var copySrc = [
     srcDir + '/fonts/**/*',
-    srcDir + '/images/**/*',
-    srcDir + '/scripts/app.js',
-    // srcDir + '/scripts/application.js' // not sure why there are two files...
+    srcDir + '/images/**/*'
 ];
 
 // TODO: check if clean task is really necessary
@@ -80,5 +81,5 @@ gulp.task('set-base:production', [], function() {
 gulp.task('build-search-index',['sass:dev'], shell.task(['node ./buildSearchIndex.js']));
 gulp.task('hugo', ['sass:dev', 'build-search-index'], shell.task(['hugo']));
 
-gulp.task('build:prod', ['hugo', 'set-base:production', 'js']);
-gulp.task('build:dev', ['hugo', 'set-base:development', 'js']);
+gulp.task('build:prod', ['hugo', 'set-base:production']);
+gulp.task('build:dev', ['hugo', 'set-base:development']);
