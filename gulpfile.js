@@ -42,7 +42,6 @@ gulp.task('js', function() {
     // TODO: update this to run uglify on main js as well (and remove it from copy)
     // TODO: check if js files not listed here can be deleted
     gulp.src([jsLibsBase + 'jquery-3.1.0.min.js', jsLibsBase + 'lunrjs.min.js', jsLibsBase + 'highlight.pack.js', jsLibsBase + 'debounce.min.js', jsLibsBase + 'clipboard.min.js', jsLibsBase + 'version.js'])
-        .pipe(concat('vendor.js'))
         .pipe(gulp.dest(destDir + '/scripts/'));
 });
 
