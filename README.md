@@ -24,7 +24,11 @@
 
         $ brew update && brew install hugo
 
-3. Run hugo in watch mode and start adding content under the `content/` tree
+3. Start the default gulp task to build and watch styles, scripts and assets
+
+        $ gulp
+
+4. Run hugo in watch mode and start adding content under the `content/` tree
 
         $ hugo server
 
