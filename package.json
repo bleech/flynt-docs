@@ -1,45 +1,36 @@
 {
   "name": "flynt-documentation",
   "version": "0.1.0",
-  "description": "Source Code for the [Flynt Documentation](https://docs.flyntwp.com).",
-  "main": "buildMenu.js",
-  "dependencies": {
-    "browser-sync": "^2.17.5",
-    "colors": "^1.1.2",
+  "description": "Source code for the [Flynt documentation](https://docs.flyntwp.com) website.",
+  "dependencies": {},
+  "devDependencies": {
     "del": "^2.2.2",
     "directory-tree": "^1.1.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-changed": "^3.1.0",
     "gulp-clean-css": "^3.4.0",
     "gulp-concat": "^2.6.0",
-    "gulp-if": "^2.0.1",
-    "gulp-imagemin": "^3.0.3",
-    "gulp-inject-string": "^1.1.0",
     "gulp-sass": "^2.3.2",
+    "gulp-shell": "^0.5.2",
     "gulp-uglify": "^3.0.0",
-    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.11",
     "hugo-lunr": "0.0.4",
     "lunr": "^0.7.1",
-    "merge-stream": "^1.0.0",
     "pump": "^1.0.2",
     "remove-markdown": "^0.1.0",
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2",
     "streamqueue": "^1.1.1"
   },
-  "devDependencies": {
-    "flow-bin": "^0.36.0",
-    "gulp-shell": "^0.5.2",
-    "gulp-useref": "^3.1.2",
-    "gulp-watch": "^4.3.11",
-    "run-sequence": "^1.2.2"
-  },
   "scripts": {
-    "build-index": "hugo-lunr -o static/lunr.json"
+    "buildIndex": "hugo-lunr -o static/lunr.json"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flyntwp/flynt-documentation.git"
   },
-  "author": "",
+  "author": "bleech GmbH <hello@bleech.de> (https://bleech.de/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/flyntwp/flynt-documentation/issues"
