@@ -12,6 +12,7 @@
     "gulp-clean-css": "^3.4.0",
     "gulp-concat": "^2.6.0",
     "gulp-sass": "^2.3.2",
+    "gulp-sass-glob": "^1.0.8",
     "gulp-shell": "^0.5.2",
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^4.3.11",

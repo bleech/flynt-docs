@@ -9,8 +9,11 @@ module.exports = {
     }
   },
   'sass': [
-    srcDir + '/styles/sass/**/*.sass',
-    '!' + srcDir + '/styles/sass/**/_*.sass'
+    srcDir + '/styles/**/*.sass',
+    '!' + srcDir + '/styles/**/_*.sass'
+  ],
+  'css': [
+    srcDir + '/styles/**/*.css'
   ],
   'uglify': [
     srcDir + '/scripts/**/*.js'
