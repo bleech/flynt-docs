@@ -1,25 +1,39 @@
-# Flynt Documentation
+# flynt-documentation
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-This is the source for the [Flynt Framework documentation](https://docs.flyntwp.com).
+> Source for the [Flynt Framework documentation](https://docs.flyntwp.com).
 
-## Setup HUGO
-    
+## Table of Contents
+
+- [Install](#install)
+- [Usage](#usage)
+  - [Adding menu items](#adding-menu-items)
+  - [Versioning](#versioning)
+  - [Adding Redirects for old content](#adding-redirects-for-old-content)
+- [Maintainers](#maintainers)
+- [Contribute](#contribute)
+- [License](#license)
+
+## Install
+
 1. Clone this repo
-    
+
         $ git clone https://github.com/bleech/flynt-docs.git
-        
+
 2. Download Hugo from [http://gohugo.io](http://gohugo.io) or install using Homebrew:
-    
+
         $ brew update && brew install hugo
 
 3. Run hugo in watch mode and start adding content under the `content/` tree
 
-        $ hugo server --watch
+        $ hugo server
 
     The site is served under `localhost:1313`
 
-## Adding menuitems
-### Top menu item
+## Usage
+
+### Adding menu items
+#### Top menu item
 1. Go to the `config.toml` file
 2. Go to the `# Top Menu Items` comment
 3. Add a top menu item like this:
@@ -38,7 +52,7 @@ This is the source for the [Flynt Framework documentation](https://docs.flyntwp.
 |identifier |string |Should be **unique** for every item!               | 
 |weight     |int    |For the order of menu items, lower is more on top  |
 
-### Side Menu item
+#### Side Menu item
 1. Go to the `config.toml` file
 2. Go to the `# Side Menu Items` comment
 3. Add a side menu item like this:
@@ -59,7 +73,7 @@ This is the source for the [Flynt Framework documentation](https://docs.flyntwp.
 |identifier |string |Should be **unique** for every item!               | 
 |weight     |int    |For the order of menu items, lower is more on top  |
 
-### Side submenu item
+#### Side submenu item
 1. Go to the page that should be added to the side menu in the `Content` folder.
 2. At the top of the page add this to the parameter:
 ```
@@ -75,7 +89,7 @@ menu:
 |parent     |string |Identifier of the side menu item under wich this page resides|
 |weight     |int    |For the order of menu items, lower is more on top  |
 
-## Versioning
+### Versioning
 1. Go to the pages where you want subversioning on.
 ```
 -api
@@ -116,7 +130,7 @@ menu:
         weight: 30 #Different from v1.0.0
 ```
 
-## Adding Redirects for old content
+### Adding Redirects for old content
 
 This is done by adding the old URL (the one you want to redirect) as an alias to the new destination page.
 
@@ -131,3 +145,23 @@ menu:
 aliases:
     - /using-flynt/
 ```
+
+## Maintainers
+
+This project is maintained by [bleech](https://github.com/bleech).
+
+The main people in charge of this repo are:
+
+- [Dominik Tränklein](https://github.com/domtra)
+- [Doğa Gürdal](https://github.com/Qakulukiam)
+- [Michael Carruthers](https://github.com/emcarru)
+
+## Contribute
+
+To contribute, please use github [issues](https://github.com/flyntwp/flynt-docs/issues). Pull requests are accepted.
+
+If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
+
+## License
+
+MIT © [bleech](https://www.bleech.de)

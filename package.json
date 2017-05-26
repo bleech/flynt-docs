@@ -1,7 +1,7 @@
 {
   "name": "flynt-documentation",
   "version": "0.1.0",
-  "description": "Source code for the [Flynt documentation](https://docs.flyntwp.com) website.",
+  "description": "Source for the [Flynt Framework documentation](https://docs.flyntwp.com).",
   "dependencies": {},
   "devDependencies": {
     "del": "^2.2.2",
