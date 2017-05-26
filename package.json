@@ -28,7 +28,9 @@
   "devDependencies": {
     "flow-bin": "^0.36.0",
     "gulp-shell": "^0.5.2",
-    "gulp-useref": "^3.1.2"
+    "gulp-useref": "^3.1.2",
+    "gulp-watch": "^4.3.11",
+    "run-sequence": "^1.2.2"
   },
   "scripts": {
     "build-index": "hugo-lunr -o static/lunr.json"

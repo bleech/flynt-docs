@@ -12,51 +12,88 @@ var streamqueue = require('streamqueue');
 var cleanCSS = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
+var runSequence = require('run-sequence');
+var watch = require('gulp-watch');
 
 var srcDir = './src';
-var destDir = './static';
+var config = {
+    'src': srcDir,
+    'dest': './static',
+    'sass': [
+        srcDir + '/styles/sass/**/*.sass',
+        '!' + srcDir + '/styles/sass/**/_*.sass'
+    ],
+    'uglify': [
+        srcDir + '/scripts/**/*.js'
+    ],
+    'copy': [
+        srcDir + '/fonts/**/*',
+        srcDir + '/images/**/*'
+    ]
+};
+
+function watchAndDelete (src, callback, dest) {
+  return watch(src, {
+    events: ['add', 'change', 'unlink', 'unlinkDir']
+  }, callback)
+  .on('data', function (file) {
+    if (file.event === 'unlink') {
+      const filePath = path.join(dest, file.relative)
+      if (fs.existsSync(filePath)) {
+        fs.unlinkSync(filePath)
+      }
+      if (extensionMappings[file.extname]) {
+        const relativeDest = path.dirname(filePath)
+        const mappedFilePath = path.join(relativeDest, file.stem + extensionMappings[file.extname])
+        if (fs.existsSync(mappedFilePath)) {
+          fs.unlinkSync(mappedFilePath)
+        }
+      }
+    }
+    if (file.event === 'unlinkDir') {
+      const dirPath = path.join(dest, file.relative)
+      if (fs.existsSync(dirPath)) {
+        fs.rmdirSync(dirPath)
+      }
+    }
+  })
+}
 
 gulp.task('clean', function () {
     return del([
-      destDir + '/**/*',
-      '!' + destDir + '/.gitkeep'
+      config.dest + '/**/*',
+      '!' + config.dest + '/.gitkeep'
     ])
 });
 
-gulp.task('sass:dev', ['uglify'], function() {
-    var sassStream = gulp.src(srcDir + '/styles/scss/style.scss')
+gulp.task('sass', function() {
+    var sassStream = gulp.src(config.src + '/styles/scss/style.scss')
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(autoprefixer({cascade: false}));
 
-    var cssStream = gulp.src(srcDir + '/styles/vendor/*.css')
+    var cssStream = gulp.src(config.src + '/styles/vendor/*.css')
         .pipe(concat('css-files.css'));
 
     var mergedStream = streamqueue({ objectMode: true }, cssStream, sassStream)
         .pipe(concat('style.css'))
         .pipe(cleanCSS())
-        .pipe(gulp.dest(destDir + '/styles'));
+        .pipe(gulp.dest(config.dest + '/styles'));
     return mergedStream;
 });
 
-gulp.task('uglify', ['copy'], function (cb) {
+gulp.task('uglify', function (cb) {
     pump([
-            gulp.src(srcDir + '/scripts/**/*.js', { base: srcDir }),
+            gulp.src(config.uglify, { base: config.src }),
             uglify(),
-            gulp.dest(destDir)
+            gulp.dest(config.dest)
         ],
         cb
     );
 })
 
-var copySrc = [
-    srcDir + '/fonts/**/*',
-    srcDir + '/images/**/*'
-];
-
-// TODO: check if clean task is really necessary
-gulp.task('copy', ['clean'], function () {
-    gulp.src(copySrc, { base: srcDir })
-        .pipe(gulp.dest(destDir))
+gulp.task('copy', function () {
+    gulp.src(config.copy, { base: config.src })
+        .pipe(gulp.dest(config.dest))
 })
 
 var developmentBase = '\n<script type="text/javascript">';
@@ -78,8 +115,30 @@ gulp.task('set-base:production', [], function() {
     fs.writeFileSync('./layouts/partials/base-url.html', '\n'+productionBase+'\n<base href="'+ prodUrl + '" />');
 });
 
-gulp.task('build-search-index',['sass:dev'], shell.task(['node ./buildSearchIndex.js']));
-gulp.task('hugo', ['sass:dev', 'build-search-index'], shell.task(['hugo']));
+gulp.task('build-search-index', shell.task(['node ./buildSearchIndex.js']));
 
-gulp.task('build:prod', ['hugo', 'set-base:production']);
-gulp.task('build:dev', ['hugo', 'set-base:development']);
+gulp.task('hugo', shell.task(['hugo']));
+
+gulp.task('watch', function () {
+    watchAndDelete(config.copy, function () { gulp.start('copy') }, config.dest)
+    watch(config.sass, function () { gulp.start('sass') })
+    watch(config.uglify, function () { gulp.start('uglify') })
+});
+
+gulp.task('default', function (cb) {
+    runSequence(
+        'clean',
+        ['copy', 'sass', 'uglify', 'set-base:development', 'build-search-index'],
+        'watch',
+        cb
+    );
+});
+
+gulp.task('build', function (cb) {
+    runSequence(
+        'clean',
+        ['copy', 'sass', 'uglify', 'set-base:production', 'build-search-index'],
+        'hugo',
+        cb
+    )
+});
