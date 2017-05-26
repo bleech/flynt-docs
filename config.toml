@@ -1,4 +1,4 @@
-baseurl = "."
+baseurl = "http://flynt-docs.dev/"
 languageCode = "en-us"
 title = "Flynt Framework"
 metadataformat = "yaml"
