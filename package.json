@@ -2,8 +2,10 @@
   "name": "flynt-documentation",
   "version": "0.1.0",
   "description": "Source for the [Flynt Framework documentation](https://docs.flyntwp.com).",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
+    "browser-sync": "^2.18.12",
     "del": "^2.2.2",
     "directory-tree": "^1.1.1",
     "gulp": "^3.9.1",
@@ -25,7 +27,9 @@
     "streamqueue": "^1.1.1"
   },
   "scripts": {
-    "buildIndex": "hugo-lunr -o static/lunr.json"
+    "buildIndex": "hugo-lunr -o static/lunr.json",
+    "build": "gulp build",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",

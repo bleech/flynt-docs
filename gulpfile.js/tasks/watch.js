@@ -1,3 +1,4 @@
+const browserSync = require('browser-sync')
 const fs = require('fs')
 const gulp = require('gulp')
 const path = require('path')
@@ -36,9 +37,11 @@ function watchAndDelete (src, callback, dest) {
 
 module.exports = function (config) {
   gulp.task('watch', function (cb) {
+    browserSync(config.watch.browserSync)
     watchAndDelete(config.copy, function () { gulp.start('copy') }, config.dest)
     watch(config.watch.sass, function () { gulp.start('sass') })
     watch(config.uglify, function () { gulp.start('uglify') })
+    watch(config.watch.hugo, function () { gulp.start('hugo') })
     cb()
   });
 }

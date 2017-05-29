@@ -19,8 +19,18 @@ module.exports = {
     srcDir + '/scripts/**/*.js'
   ],
   'watch': {
+    'browserSync': {
+      server: {
+        baseDir: "./public/"
+      },
+      port: 1313,
+      open: false
+    },
     'sass': [
       srcDir + '/styles/**/*.sass'
+    ],
+    'hugo': [
+      './{data,content,layouts,static}/**/*'
     ]
   },
   'copy': [

@@ -5,6 +5,7 @@ gulp.task('default', function (cb) {
   runSequence(
     'clean',
     ['copy', 'sass', 'uglify', 'setBase:development', 'buildSearchIndex'],
+    'hugo',
     'watch',
     cb
   );
