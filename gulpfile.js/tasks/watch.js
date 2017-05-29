@@ -37,7 +37,7 @@ function watchAndDelete (src, callback, dest) {
 module.exports = function (config) {
   gulp.task('watch', function (cb) {
     watchAndDelete(config.copy, function () { gulp.start('copy') }, config.dest)
-    watch(config.sass, function () { gulp.start('sass') })
+    watch(config.watch.sass, function () { gulp.start('sass') })
     watch(config.uglify, function () { gulp.start('uglify') })
     cb()
   });

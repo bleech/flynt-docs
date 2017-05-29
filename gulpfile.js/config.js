@@ -18,6 +18,11 @@ module.exports = {
   'uglify': [
     srcDir + '/scripts/**/*.js'
   ],
+  'watch': {
+    'sass': [
+      srcDir + '/styles/**/*.sass'
+    ]
+  },
   'copy': [
     srcDir + '/fonts/**/*',
     srcDir + '/images/**/*'
