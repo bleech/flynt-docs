@@ -3,6 +3,10 @@ const gulp = require('gulp')
 const path = require('path')
 const watch = require('gulp-watch')
 
+const extensionMappings = {
+  // '.sass': '.css' // TODO: add this after sass concatenation is removed
+}
+
 function watchAndDelete (src, callback, dest) {
   return watch(src, {
     events: ['add', 'change', 'unlink', 'unlinkDir']
