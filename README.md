@@ -16,7 +16,7 @@
 
 ## Install
 
-1. Clone this repo
+1. Clone this repo.
 
         $ git clone https://github.com/bleech/flynt-docs.git
 
@@ -24,17 +24,19 @@
 
         $ brew update && brew install hugo
 
-3. Run `npm install`.
+3. Install npm packages using [yarn](https://yarnpkg.com/) (make sure yarn is installed on your system).
 
-4. Start the default gulp task to build and watch styles, scripts and assets
+        $ yarn
+
+4. Start the default gulp task to build and watch styles, scripts and assets.
 
         $ gulp
 
-5. Run hugo in watch mode and start adding content under the `content/` tree
+5. Run hugo in watch mode and start adding content under the `content/` tree.
 
         $ hugo server
 
-    The site is served under `localhost:1313`
+    The site is served under `localhost:1313`.
 
 ## Usage
 
