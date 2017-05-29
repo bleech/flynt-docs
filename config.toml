@@ -19,7 +19,7 @@ googleAnalytics = ""
 
   version = "0.1.0"
   logo = "images/logo.jpeg"
-  favicon = "favicon.ico"
+  favicon = "images/favicon.ico"
 
   permalink = "#"
 
