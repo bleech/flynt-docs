@@ -52,17 +52,17 @@ googleAnalytics = ""
 # Top Menu Items
 [[menu.main]]
   name   = "Documentation"
-  url    = "/documentation/"
+  url    = "/documentation/getting-started/what-is-flynt/"
   weight = 20
 
 [[menu.main]]
   name   = "Tutorials"
-  url    = "/tutorials/"
+  url    = "/tutorials/building-your-first-component/setup/"
   weight = 30
 
 [[menu.main]]
   name   = "Resources"
-  url    = "/resources/"
+  url    = "/resources/faq/"
   weight = 40
 
 # Side Menu Items, Parent should match the identifier of the Top Menu Item
