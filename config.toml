@@ -38,7 +38,7 @@ googleAnalytics = ""
       text = "Roboto"
       code = "Roboto Mono"
 
-[social]
+[params.social]
   twitter = "flyntwp"
   # github  = "flyntwp"
   # email   = "flynt@bleech.de"
