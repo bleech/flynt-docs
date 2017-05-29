@@ -15,7 +15,7 @@ Since components are self-contained, areas provide a way to stack our building-b
 
   <p>That's all there is to know! We can now get started with building our first component.</p>
 
-  <p><a href="hello-world.md" class="btn btn-primary">Get started</a></p>
+  <p><a href="hello-world.md" class="button button--primary">Get started</a></p>
 </div>
 
 ## Kebab case

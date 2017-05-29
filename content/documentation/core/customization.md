@@ -140,7 +140,7 @@ add_filter('Flynt/renderComponent', function($output, $componentName, $component
 
 Your component data will now be available as usual in `index.tpl`:
 
-```smarty
+```
 <div is="flynt-example-module">
   <h1>{$title}</h1>
 </div>

@@ -109,15 +109,17 @@ body
   @extend .h3
 
   //font-weight: 300;
+  align-items: center
+  border-radius: 5px
   border: none
+  display: flex
   height: 40px
+  justify-content: center
+  line-height: 40px
   min-width: 120px
   padding: 0 40px
-  border-radius: 5px
+  text-decoration: none
   transition: all 0.15s ease-in-out
-  display: flex
-  align-items: center
-  justify-content: center
 
   p
     line-height: 1
@@ -160,7 +162,7 @@ body
         background-color: $color-bermuda-gray
         color: white
 
-  &--red
+  &--primary
     background-color: $color-primary
     color: white
 
@@ -191,6 +193,10 @@ body
       &:hover
         background-color: $color-big-stone
         color: white
+
+.markdowned
+  .button
+    display: inline-block
 
 // Lander rows
 .lander-row
@@ -601,7 +607,7 @@ body
   p + ol
     margin-top: 0
 
-  a
+  a:not(.button)
     font-size: 15px
     font-weight: 300
     color: $color-primary
@@ -1256,7 +1262,7 @@ pre + pre
   height: 40px
   background: none
   border: none
-  background-color: #E7ECF1
+  background-color: #EAEAEA
 
   p
     margin: 0

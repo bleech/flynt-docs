@@ -69,6 +69,7 @@ add_filter('Flynt/renderComponent', ['Flynt\Defaults', 'renderComponent'], 999, 
 ```
 
 In summary, these hooks do the following:
+
 - Load config files from the `./config` directory.
 - Parse `.json` config files.
 - Set the component path to `./Components`.

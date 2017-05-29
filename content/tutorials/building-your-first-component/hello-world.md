@@ -133,5 +133,5 @@ Components defined within the `pageComponents` area in the `default.json` page t
 
   <p>In the next section we will tackle making this content dynamic by adding user-editable content fields. We will then learn to manipulate this data before we pass it to the view and render it.</p>
 
-  <p><a href="using-acf.md" class="btn btn-primary">Learn to add fields</a></p>
+  <p><a href="using-acf.md" class="button button--primary">Learn to add fields</a></p>
 </div>

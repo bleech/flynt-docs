@@ -7,8 +7,6 @@ menu:
     weight: 37
 ---
 
-# Styles
-
 Each component can have a style file. By default, Flynt supports vanilla CSS files, and the pre-processor [Stylus](http://stylus-lang.com/).
 
 The style file should be named `style`, and be placed within the individual component folder. This file will be automatically compiled to the `dist` folder in the same location.

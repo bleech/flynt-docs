@@ -117,5 +117,5 @@ We're done! Our editor can now change and re-word the text as they wish, adding 
 
   <p>We have covered the core concepts of building a dynamic content driven component. What's missing is front-end styling. To round up the series we'll dive into assets and how we require styles, scripts, and images.</p>
 
-  <p><a href="adding-assets.md" class="btn btn-primary">Learn how to add assets</a></p>
+  <p><a href="adding-assets.md" class="button button--primary">Learn how to add assets</a></p>
 </div>

@@ -269,5 +269,5 @@ Here, Timber's default Wordpress image handling provides us with our featured im
 
   <p>We now have a simple component that takes data from our fields and outputs them on the front-end! But what if we want to pull other data in our component? The next section explores passing additional data to our component.</p>
 
-  <p><a href="modify-data.md" class="btn btn-primary">Learn to add component data</a></p>
+  <p><a href="modify-data.md" class="button button--primary">Learn to add component data</a></p>
 </div>
