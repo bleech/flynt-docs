@@ -229,6 +229,12 @@ body
     @media all and (min-width: 1201px)
       padding: 40px 0
 
+  &--green
+    background-color: $color-primary
+
+    .header, .h1, .h2, .text-header, .text, .fa
+      color: #fff !important
+
   &--blue
     background-color: $color-big-stone
 
@@ -348,7 +354,7 @@ body
 
 .side-menu
   display: none
-  background-color: $color-white-squeeze
+  background-color: $color-light-grey
   padding: (40px + 80px) 40px 40px 40px
   height: 100vh
   position: fixed
@@ -598,7 +604,7 @@ body
   a
     font-size: 15px
     font-weight: 300
-    color: $color-bermuda-gray
+    color: $color-primary
     line-height: 1.7
     letter-spacing: 0.025em
     text-decoration: underline
@@ -677,7 +683,7 @@ body
 
   tr:hover
     td
-      background-color: $color-white-squeeze
+      background-color: $color-light-grey
 
 .date
   @extend .text
@@ -843,7 +849,7 @@ body
   z-index: 999
 
   .text
-    color: $color-jungle-mist !important
+    color: $color-white !important
     text-align: center
 
   .h2
@@ -858,7 +864,7 @@ body
 
     .text
       font-weight: 100
-      color: $color-jungle-mist !important
+      color: $color-white !important
 
     &.rss-feed-link
       text-decoration: underline
@@ -883,10 +889,7 @@ body
   position: relative
   z-index: 999
   padding: 20px 0
-  border-top: 1px solid rgba($color-ming, 0.3)
-
-  .text
-    color: $color-jungle-mist !important
+  border-top: 1px solid rgba(#000, 0.2)
 
   .vamp-bat
     height: 40px
