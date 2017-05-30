@@ -25,33 +25,32 @@ By default, the following custom page template is also included:
 
 ## Configuring Page Templates
 
-Each PHP template within the `templates` directory works in exactly the same way. The template takes a simple JSON configuration file, and using the Flynt Core plugin, parses and renders this into HTML.
+The structure of each page within the theme is created using a nested JSON object. Each PHP template within the `templates` directory takes a simple JSON configuration file, and using the Flynt Core plugin, parses and renders this into HTML.
 
-By default, the JSON template configuration files are in `config/templates`.
+For example, take `templates/page.php`:
 
-These configuration files contain an overview of which areas and components are loaded into the template.
+```php
+<?php
 
-Take `config/templates/default.json` as an example. This template calls the `MainLayout` component and registers one area: `mainTemplate`. Within `mainTemplate`, three additional areas are defined: `mainHeader`, `pageComponents`, and `mainFooter`.
+Flynt\echoHtmlFromConfigFile('default.json');
+```
+
+The JSON template configuration files are found in `config/templates`. These configuration files define the [components](/documentation/components/what-is-component) and their [areas](/documentation/components/what-is-component/#what-is-an-area) which are loaded into the template.
+
+Take `config/templates/default.json` as an example. This template contains the `DocumentDefault` component, with one area within it: `layout`. The `layout` area contains the `LayoutSinglePost` component, which in turn has three nested [areas](/documentation/components/what-is-component/#what-is-an-area): `mainHeader`, `pageComponents`, and `mainFooter`. In addition, the `pageComponents` area contains the `ComponentLoaderFlexible` component.
 
 ```json
 {
-  "name": "MainLayout",
+  "name": "DocumentDefault",
   "areas": {
-    "mainTemplate": [
+    "layout": [
       {
-        "name": "MainTemplate",
+        "name": "LayoutSinglePost",
         "areas": {
-          "mainHeader": [
-            {
-              "name": "MainNavigation",
-              "customData": {
-                "menuSlug": "main_navigation"
-              }
-            }
-          ],
+          "mainHeader": [],
           "pageComponents": [
             {
-              "name": "FlexibleContent",
+              "name": "ComponentLoaderFlexible",
               "customData": {
                 "fieldGroup": "pageComponents"
               }
@@ -63,4 +62,17 @@ Take `config/templates/default.json` as an example. This template calls the `Mai
     ]
   }
 }
+```
+
+The `layout` area is then rendered in the `Components/DocumentDefault/index.twig` template:
+
+```twig
+<!DOCTYPE html>
+<html class="flyntComponent {{ body_class }}" lang="{{ site.language }}" dir="{{ dir }}" is="flynt-document-default">
+  <head><!--...--></head>
+  <body role="document">
+    {{ area('layout') }}
+    {{ wp_footer }}
+  </body>
+</html>
 ```

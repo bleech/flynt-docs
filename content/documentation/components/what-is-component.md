@@ -9,7 +9,7 @@ menu:
     weight: 30
 ---
 
-A component is a self-contained building-block. Each component has its own scope. As such, each component is kept within its own folder which contains everything it requires; the layout, the back-end field setup, all necessary Wordpress filter and hook logic, scripting, styles, and images.
+A component is a self-contained building-block. As such, each component is kept within its own folder which contains everything it requires; the layout, the Advanced Custom Fields field setup, all necessary WordPress filter and hook logic, scripting, styles, and images.
 
 ```
   ExampleComponent/

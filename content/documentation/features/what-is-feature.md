@@ -10,9 +10,9 @@ menu:
     weight: 40
 ---
 
-With Wordpress, it is easy to create one large functions.php file, crammed full of all the custom logic your theme may need. This can get messy. In Flynt, we split each piece of functionality into smaller, self-contained **feature** bundles.
+With WordPress, it is easy to create one large functions.php file, crammed full of all the custom logic your theme may need. This can get messy. In Flynt, we split each piece of functionality into smaller, self-contained feature bundles.
 
-In most cases, features add global hooks and filters that affect the project on a global level. With this in mind, each feature is built with "drag and drop" reusability in mind.
+In most cases, features add global hooks and filters that affect the project on a global level. With this in mind, each feature is built with reusability in mind.
 
 Flynt comes with a core set of ready to go features:
 
