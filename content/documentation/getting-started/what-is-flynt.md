@@ -27,10 +27,10 @@ The Flynt Framework consists of a collection of tools:
 
 - **[Flynt Starter Theme:](https://github.com/flyntwp/flynt-starter-theme)** The official WordPress starter theme for building Flynt projects with all of our [best practices](/tutorials/best-practices/).
 - **[Flynt Core Plugin:](https://github.com/flyntwp/flynt-core)** The core building block powering the Flynt Framework.
-- **[Flynt Yeoman Generator:](https://www.npmjs.com/package/generator-flynt)** A generator for quickly scaffolding Flynt components.
 - **[ACF Field Group Composer:](https://github.com/flyntwp/acf-field-group-composer)** A configuration builder for Advanced Custom Fields field groups.
 - **[Flynt Docker Build:](https://github.com/flyntwp/docker-flynt-build)** A docker build for quickly setting up and deploying Flynt projects.
-- **[Flynt CLI](/documentation/cli):** Command line management for taking care of common Flynt tasks.
+- **Flynt Yeoman Generator (Coming soon):** A generator for quickly scaffolding Flynt components.
+- **Flynt CLI (Coming soon):** Command line management for taking care of common Flynt tasks.
 
 ## Resources / Next Steps
 
