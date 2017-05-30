@@ -1,4 +1,4 @@
-baseurl = "http://flynt-docs.dev/"
+baseurl = "http://localhost:1313/"
 languageCode = "en-us"
 title = "Flynt Framework"
 metadataformat = "yaml"
