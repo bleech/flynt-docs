@@ -1,6 +1,7 @@
 ---
 title: Theme Structure
 weight: 12
+draft: true
 menu:
   main:
     parent: "Getting Started"
