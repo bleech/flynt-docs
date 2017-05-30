@@ -28,15 +28,11 @@
 
         $ yarn
 
-4. Start the default gulp task to build and watch styles, scripts and assets.
+4. Start the default gulp task to build and watch styles, scripts and assets. The site is served under `localhost:1313`.
 
         $ gulp
 
-5. Run hugo in watch mode and start adding content under the `content/` tree.
-
-        $ hugo server
-
-    The site is served under `localhost:1313`.
+5. Add content under the `content/` tree.
 
 ## Usage
 
