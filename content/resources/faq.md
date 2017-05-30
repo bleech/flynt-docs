@@ -1,5 +1,6 @@
 ---
 title: Frequently Asked Questions (FAQ)
+draft: true
 weight: 90
 aliases:
   - /resources/
