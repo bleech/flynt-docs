@@ -37,11 +37,13 @@ function watchAndDelete (src, callback, dest) {
 
 module.exports = function (config) {
   gulp.task('watch', function (cb) {
-    browserSync(config.watch.browserSync)
+    browserSync(config.browserSync)
     watchAndDelete(config.copy, function () { gulp.start('copy') }, config.dest)
     watch(config.watch.sass, function () { gulp.start('sass') })
     watch(config.uglify, function () { gulp.start('uglify') })
     watch(config.watch.hugo, function () { gulp.start('hugo') })
+    watch(config.watch.browserSync).
+    pipe(browserSync.stream())
     cb()
   });
 }

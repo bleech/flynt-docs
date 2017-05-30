@@ -18,14 +18,17 @@ module.exports = {
   'uglify': [
     srcDir + '/scripts/**/*.js'
   ],
-  'watch': {
-    'browserSync': {
-      server: {
-        baseDir: "./public/"
-      },
-      port: 1313,
-      open: false
+  'browserSync': {
+    server: {
+      baseDir: './public'
     },
+    port: 1313,
+    open: false
+  },
+  'watch': {
+    browserSync: [
+      './static/**/*'
+    ],
     'sass': [
       srcDir + '/styles/**/*.sass'
     ],

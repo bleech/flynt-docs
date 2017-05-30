@@ -29,7 +29,7 @@ function transverseTree(tree) {
     } else {
       var fileContent = readFile('./' + treeItem.path);
       var thePath = removeContentFromUri(treeItem.path);
-      thePath = removeExtentionFromUri(thePath, treeItem.extension);      
+      thePath = removeExtentionFromUri(thePath, treeItem.extension);
       thePath = removeIndex(thePath);
 
       let aDocument = {
@@ -70,7 +70,7 @@ function buildIndex(data) {
 function removeContentFromUri(uri) {
   if(uri.substring(0, 7) === 'content') {
     return uri.substring(7, uri.length);
-  } else {    
+  } else {
     return uri;
   }
 }
@@ -136,7 +136,5 @@ function writeFile(name, path, data) {
       }
 
       console.log(name + ' file was saved!');
-  }); 
+  });
 }
-
-

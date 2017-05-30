@@ -1,5 +1,4 @@
 const autoprefixer = require('gulp-autoprefixer')
-const browserSync = require('browser-sync')
 const cleanCSS = require('gulp-clean-css')
 const concat = require('gulp-concat')
 const gulp = require('gulp')
@@ -23,8 +22,7 @@ module.exports = function (config) {
       .pipe(concat('style.css'))
       .pipe(cleanCSS())
       .pipe(gulp.dest(config.dest + '/styles'));
-    
+
     return mergedStream
-    .pipe(browserSync.stream())
   });
 }
