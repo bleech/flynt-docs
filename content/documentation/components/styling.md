@@ -1,11 +1,11 @@
 ---
-title: Styles
-weight: 37
+title: Styling
+weight: 32
 menu:
   main:
     parent: components
-    identifier: component-styles
-    weight: 37
+    identifier: component-styling
+    weight: 32
 ---
 
 Each component can have a style file. By default, Flynt supports vanilla CSS files, and the pre-processor [Stylus](http://stylus-lang.com/).

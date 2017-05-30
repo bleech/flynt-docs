@@ -1,10 +1,11 @@
 ---
 title: Dynamic Sub-Components
-weight: 33
+draft: true
+weight: 50
 menu:
   main:
     parent: components
-    weight: 33
+    weight: 50
 ---
 
 <!-- TODO: Test priority of filters < 999. -->

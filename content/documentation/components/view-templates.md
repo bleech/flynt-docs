@@ -1,10 +1,10 @@
 ---
 title: View Templates
-weight: 38
+weight: 31
 menu:
   main:
     parent: components
-    weight: 38
+    weight: 31
 ---
 
 - TODO: add definition for view template that doesn't suck

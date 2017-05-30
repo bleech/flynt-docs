@@ -1,5 +1,6 @@
 ---
-title: Functions
+title: Server Side Logic
+weight: 35
 menu:
   main:
     parent: components

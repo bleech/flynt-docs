@@ -1,7 +1,7 @@
 ---
 title: What is a Component?
 weight: 30
-aliases: 
+aliases:
   - /documentation/components/
 menu:
   main:

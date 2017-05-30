@@ -1,12 +1,12 @@
 ---
-title: Scripts
-weight: 36
+title: Client Side Scripts
+weight: 33
 menu:
   main:
     parent: components
     identifier: component-scripts
-    name: Scripts
-    weight: 36
+    name: Client Side Scripts
+    weight: 33
 ---
 
 To add scripts to a component, create a `script.js` file within the individual component folder. This file will be automatically compiled to the `dist` folder using [Babel](https://babeljs.io/).

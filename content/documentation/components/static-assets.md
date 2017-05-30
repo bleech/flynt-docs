@@ -1,10 +1,10 @@
 ---
-title: "Assets"
-weight: 31
+title: "Static Assets"
+weight: 36
 menu:
   main:
     parent: components
-    weight: 31
+    weight: 36
 ---
 
 All assets (scripts, styles, and images, and SVGs) of a component should be contained within the individual component folder.

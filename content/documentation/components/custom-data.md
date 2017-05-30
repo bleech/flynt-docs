@@ -1,10 +1,11 @@
 ---
 title: Custom Data
-weight: 32
+draft: true
+weight: 40
 menu:
   main:
     parent: components
-    weight: 32
+    weight: 40
 ---
 
 <!-- TODO: Section explaining ACF custom data. -->
