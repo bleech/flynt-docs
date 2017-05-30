@@ -10,7 +10,11 @@ menu:
     weight: 50
 ---
 
+<<<<<<< HEAD
 Utils are small, single file PHP utility classes that can be re-used in any Flynt project. All Utils are located in the `lib/Utils` folder of the [Flynt Starter Theme](https://github.com/flyntwp/flynt-starter-theme/blob/master/lib/Utils).
+=======
+Utils are small, single file PHP utility classes that can be re-used in any Flynt project. All Utils are located in the `lib/Utils` folder of the [Flynt Starter Theme](https://github.com/flyntwp/flynt-starter-theme/tree/master/lib/Utils).
+>>>>>>> feat(Utils): remove detailed util files in favour of one simple overview + simple use instructions
 
 Flynt comes with the following Utils ready to use:
 
