@@ -3,10 +3,10 @@ title: "1. Setup"
 weight: 20
 aliases:
   - /tutorials/
-  - /tutorials/building-your-first-component/
+  - /tutorials/build-your-first-component/
 menu:
   main:
-    parent: Building your first Component
+    parent: Build your First Component
     weight: 20
 ---
 

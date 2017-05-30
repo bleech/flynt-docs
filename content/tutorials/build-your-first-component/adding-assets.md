@@ -3,7 +3,7 @@ title: "5. Adding Assets to a Component"
 weight: 24
 menu:
   main:
-    parent: Building your first Component
+    parent: Build your First Component
     weight: 24
 ---
 

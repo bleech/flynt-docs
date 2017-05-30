@@ -3,7 +3,7 @@ title: "4. Modifying Component Data"
 weight: 23
 menu:
   main:
-    parent: Building your first Component
+    parent: Build your First Component
     weight: 23
 ---
 

@@ -35,6 +35,6 @@ The Flynt Framework consists of a collection of tools:
 ## Resources / Next Steps
 
 1. Get started by [setting up Flynt on your system](/documentation/getting-started/setting-up-flynt).
-2. The best place to learn the basics of Flynt is with the [official getting started tutorial](/tutorials/building-your-first-component).
+2. The best place to learn the basics of Flynt is with the [official getting started tutorial](/tutorials/build-your-first-component).
 3. For a guided overview on the Flynt philosophy, [watch the "Higher State of Componentness" screencast](https://www.youtube.com/watch?v=xkt18wygOks).
 4. [Github](https://github.com/flyntwp/) is the best place to ask (and answer!) technical questions.

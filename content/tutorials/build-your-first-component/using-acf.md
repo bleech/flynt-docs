@@ -3,7 +3,7 @@ title: "3. Using Advanced Custom Fields (ACF)"
 weight: 22
 menu:
   main:
-    parent: Building your first Component
+    parent: Build your First Component
     weight: 22
 ---
 

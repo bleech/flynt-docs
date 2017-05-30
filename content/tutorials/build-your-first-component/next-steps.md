@@ -3,7 +3,7 @@ title: "6. Next Steps"
 weight: 25
 menu:
   main:
-    parent: Building your first Component
+    parent: Build your First Component
     weight: 25
 ---
 <!-- TODO: Add download zip link for the finished tutorial module. -->

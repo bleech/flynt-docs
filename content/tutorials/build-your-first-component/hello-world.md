@@ -3,7 +3,7 @@ title: "2. Hello World"
 weight: 21
 menu:
   main:
-    parent: Building your first Component
+    parent: Build your First Component
     weight: 21
 ---
 
