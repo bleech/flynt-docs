@@ -16,6 +16,7 @@ googleAnalytics = ""
   # Repository
   provider = "GitHub"
   repo_url = "https://github.com/flyntwp/flynt-starter-theme"
+  organisation_url = "https://github.com/flyntwp"
 
   version = "0.1.0"
   logo = "images/logo.jpeg"
@@ -40,6 +41,7 @@ googleAnalytics = ""
 
 [params.social]
   twitter = "flyntwp"
+  facebook = "flyntwp"
   # github  = "flyntwp"
   # email   = "flynt@bleech.de"
 

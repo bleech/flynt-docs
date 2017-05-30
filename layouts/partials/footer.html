@@ -2,15 +2,12 @@
   <div class="container">
     <div class="row">
       <div class="col col-7">
-        <h2 class="h2">Contribute</h2>
-          <a href="/support/">
-            <p class="text">Support</p>
+        <h2 class="h2">Get involved</h2>
+          <a href="{{ .Site.Params.organisation_url }}" target="_blank">
+            <p class="text">Flynt on GitHub</p>
           </a>
-          <a href="/resources/community/">
-            <p class="text">Community</p>
-          </a>
-          <a href="{{ .Site.Params.repo_url }}" target="_blank">
-            <p class="text">GitHub</p>
+          <a href="/resources/contributing" target="_blank">
+            <p class="text">Contribute</p>
           </a>
       </div>
       <div class="col col-7">
@@ -39,12 +36,11 @@
           <p class="text">Follow us on: </p>
           <div class="social-icons">
             <a href="https://twitter.com/{{ .Site.Params.social.twitter }}" target="_blank">
-              <i class="fa fa-2x fa-twitter"></i><!--<img src="/images/003-Small-icons/Dark-blue/Twitter.svg" alt="">-->
+              <i class="fa fa-2x fa-twitter"></i>
             </a>
-
-            <!--<a href="https://www.linkedin.com/company/magnetic-io" target="_blank">
-              <i class="fa fa-2x fa-linkedin"></i>
-            </a>-->
+            <a href="https://facebook.com/{{ .Site.Params.social.facebook }}" target="_blank">
+              <i class="fa fa-2x fa-facebook"></i>
+            </a>
           </div>
         </div>
       </div>
