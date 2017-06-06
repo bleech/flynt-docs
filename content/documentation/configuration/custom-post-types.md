@@ -7,7 +7,7 @@ menu:
     weight: 51
 ---
 
-With Flynt, custom post types can be created using the [Custom Post Type feature](https://github.com/bleech/wp-starter-theme/tree/master/Features/CustomPostTypes).
+With Flynt, custom post types can be created using the [Custom Post Type feature](https://github.com/flyntwp/flynt-starter-theme/tree/master/Features/CustomPostTypes).
 
 With this feature, custom post types are created with JSON configuration files.
 

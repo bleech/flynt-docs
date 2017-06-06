@@ -25,7 +25,7 @@ namespace Flynt\Components\ExampleComponentName;
 ```
 
 ## Enqueueing Assets and Dependencies
-The main `style.css` and `script.js` files of a component can be enqueued using the [Flynt `Component` feature](https://github.com/bleech/wp-starter-theme/tree/master/Features/Components) within the `wp_enqueue_scripts` action.
+The main `style.css` and `script.js` files of a component can be enqueued using the [Flynt `Component` feature](https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/Components) within the `wp_enqueue_scripts` action.
 
 ```php
 <?php
