@@ -59,7 +59,7 @@ googleAnalytics = ""
 
 [[menu.main]]
   name   = "Tutorials"
-  url    = "/tutorials/build-your-first-component/setup/"
+  url    = "/tutorials/creating-component/"
   weight = 30
 
 [[menu.main]]
@@ -109,9 +109,10 @@ googleAnalytics = ""
   weight = 60
 
 [[menu.main]]
-  name   = "Build your First Component"
-  url    = "/tutorials/build-your-first-component/"
+  name   = "Creating a Component"
+  url    = "/tutorials/creating-component/"
   parent = "Tutorials"
+  identifier = "creating-component"
   weight = 10
 
 [[menu.main]]
