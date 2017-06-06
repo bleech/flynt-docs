@@ -5,7 +5,8 @@ module.exports = function (config) {
   gulp.task('clean', function () {
     return del([
       config.dest + '/**/*',
-      '!' + config.dest + '/.gitkeep'
+      '!' + config.dest + '/.gitkeep',
+      config.public + '/**/*'
     ])
   });
 }

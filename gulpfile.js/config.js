@@ -3,6 +3,7 @@ const srcDir = './src'
 module.exports = {
   'src': srcDir,
   'dest': './static',
+  'public': './public',
   'env': {
     'prod': {
       'baseUrl': 'https://docs.flyntwp.com/'
