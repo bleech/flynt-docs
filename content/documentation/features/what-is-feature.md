@@ -35,11 +35,11 @@ Flynt comes with a core set of ready to go features:
       Clean-up the WP head markup.
     </li>
     <li>
-      <a href="https://github.com/flyntwp/flynt-starter-theme/tree/master/Features/CleanRss/README.md">CleanRss</a><br>
+      <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/CleanRss/README.md">CleanRss</a><br>
       Improve WP RSS feeds.
     </li>
     <li>
-      <a href="https://github.com/flyntwp/flynt-starter-theme/tree/master/Features/Components/README.md">Components</a><br>
+      <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/Components/README.md">Components</a><br>
       Register &amp; configure Flynt Components.
     </li>
     <li>
@@ -47,39 +47,39 @@ Flynt comes with a core set of ready to go features:
       Add the Google Analytics tracking script.
     </li>
     <li>
-      <a href="https://github.com/flyntwp/flynt-starter-theme/tree/master/Features/Jquery/README.md">Jquery</a><br>
+      <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/Jquery/README.md">Jquery</a><br>
       Load jQuery from a CDN.
     </li>
     <li>
-      <a href="https://github.com/flyntwp/flynt-starter-theme/tree/master/Features/MimeTypes/README.md">MimeTypes</a><br>
+      <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/MimeTypes/README.md">MimeTypes</a><br>
       Add SVG support to the media gallery.
     </li>
     <li>
-      <a href="https://github.com/flyntwp/flynt-starter-theme/tree/master/Features/Navigation/README.md">Navigation</a><br>
+      <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/Navigation/README.md">Navigation</a><br>
       Register navigation menus.
     </li>
     <li>
-      <a href="https://github.com/flyntwp/flynt-starter-theme/tree/master/Features/PasswordForm/README.md">PasswordForm</a><br>
+      <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/PasswordForm/README.md">PasswordForm</a><br>
       Add the WP password form with twig templates.
     </li>
     <li>
-      <a href="https://github.com/flyntwp/flynt-starter-theme/tree/master/Features/RemoveEditor/README.md">RemoveEditor</a><br>
+      <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/RemoveEditor/README.md">RemoveEditor</a><br>
       Remove <code>the_content()</code> editor.
     </li>
     <li>
-      <a href="https://github.com/flyntwp/flynt-starter-theme/tree/master/Features/Templates/README.md">Templates</a><br>
+      <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/Templates/README.md">Templates</a><br>
       Set the config path for page templates.
     </li>
     <li>
-      <a href="https://github.com/flyntwp/flynt-starter-theme/tree/master/Features/TimberLoader/README.md">TimberLoader</a><br>
+      <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/TimberLoader/README.md">TimberLoader</a><br>
       Enable rendering with Timber/Twig.
     </li>
     <li>
-      <a href="https://github.com/flyntwp/flynt-starter-theme/tree/master/Features/TinyMce/README.md">TinyMce</a><br>
+      <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/TinyMce/README.md">TinyMce</a><br>
       Clean-up the WP content editor toolbar.
     </li>
     <li>
-      <a href="https://github.com/flyntwp/flynt-starter-theme/tree/master/Features/CustomPostTypes/README.md">CustomPostTypes</a><br>
+      <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/CustomPostTypes/README.md">CustomPostTypes</a><br>
       Create custom post types with JSON config files.
     </li>
     <li>
