@@ -1,2 +1,0 @@
-- assets/someIcon.svg
-- asset util to pass svg url
