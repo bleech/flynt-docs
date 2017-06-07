@@ -9,7 +9,7 @@ menu:
 ---
 
 ## Scope
-Styles should always be scoped to the component using the `is` attribute. [This attribute is also used in the component script file.](scripts.md#the-is-attribute)
+Styles should always be scoped to the component using the `is` attribute. [This attribute is also used in the component script file.](/tutorials/best-practices/scripts/#the-is-attribute)
 
 The styles for a component should include all the essential styling a component needs to function correctly on its own. This includes setting the box-sizing property for your component.
 
