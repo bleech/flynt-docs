@@ -20,7 +20,7 @@ Create `style.styl` in your `BlockQuote` folder, so that your file tree matches 
 |  |  |  └── style.styl
 ```
 
-Next, lets open `style.styl` and add some basic styling. We'll be using the [recommended Flynt best practice](/tutorials/best-practices/styles/) when it comes to styling our component.
+Next, lets open `style.styl` and add some basic styling. We'll be using the [recommended Flynt best practices](/tutorials/best-practices/styles/) when it comes to styling our component.
 
 ```stylus
 .flyntComponent[is='flynt-block-quote']
@@ -112,7 +112,7 @@ That's it - refresh the front end and check your console!
 
   <ul>
     <li><a href="/documentation/components">Explore the full Component documentation.</a></li>
-    <li><a href="/tutorials/best-practices">Learn about our recommended Flynt best practice.</a></li>
+    <li><a href="/tutorials/best-practices">Learn about our recommended Flynt best practices.</a></li>
     <li><a href="https://github.com/flyntwp/flynt-docs/issues">Leave feedback regarding this tutorial or the documentation on Github.</a></li>
   </ul>
 </div>
