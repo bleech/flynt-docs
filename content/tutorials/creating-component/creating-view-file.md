@@ -31,7 +31,7 @@ Create a folder in the `Components` directory named `BlockQuote` and add a file 
 </div>
 ```
 
-Your file tree will now look like this:
+Your theme folder will now look like this:
 
 ```
 ├── flynt-starter-theme
@@ -41,9 +41,9 @@ Your file tree will now look like this:
 ```
 
 ## Rendering your component
-To render our `BlockQuote` component, we need to add it to a page template. The structure of each page within the theme is created using a nested JSON object. The JSON template configuration files are found in `config/templates`. These configuration files define the [components](/documentation/components/what-is-component/) and their [areas](/documentation/components/what-is-component/#what-is-an-area) which are loaded into the template.
+To render our `BlockQuote` component, we need to add it to a page template. The structure of each page within the theme is created using a nested [JSON](http://json.org/) object. The JSON template configuration files are found in `config/templates`. These configuration files define the [components](/documentation/components/what-is-component/) and their [areas](/documentation/components/what-is-component/#what-is-an-area) which are loaded into the template.
 
-For now, we will add the `BlockQuote` component to the `default.json` template. 
+For now, we will add the `BlockQuote` component to the `default.json` template.
 
 Open `config/templates/default.json` and add the `BlockQuote` component to the `pageComponents` array:
 

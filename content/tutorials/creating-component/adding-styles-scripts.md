@@ -9,7 +9,7 @@ menu:
 
 To add CSS to a component, you can add a style file either as a plain CSS file (.css), or as a [Stylus](http://stylus-lang.com/) file (.styl). In this tutorial, we will use Stylus.
 
-Create `style.styl` in your `BlockQuote` folder, so that your file tree matches the following:
+Create `style.styl` in your `BlockQuote` folder, so that your theme folder matches the following:
 
 ```
 ├── flynt-starter-theme
@@ -40,7 +40,7 @@ Providing you have run `flynt start` in your terminal, Flynt will now compile `C
 ## Enqueuing your assets
 **There is one crucial step missing.** To load these styles into the front end, you must enqueue these styles using the `functions.php` file of your component. [The functions file can be used for all of your custom server side logic that is specific to your component](documentation/components/server-side-logic/).
 
-First, create `functions.php` inside your BlockQuote component. Your file tree should now look like this:
+First, create `functions.php` inside your BlockQuote component. Your theme folder should now look like this:
 
 ```
 ├── flynt-starter-theme
@@ -72,7 +72,7 @@ Flynt will now look for `Components/BlockQuote/style.css`, and enqueue the file 
 Refresh the front end of your website and you will now see your styles!
 
 ## Adding scripts
-To add custom JavaScript logic to your component, create a `script.js` file inside your component, so that your file tree matches the following:
+To add custom JavaScript logic to your component, create a `script.js` file inside your component, so that your theme folder matches the following:
 
 ```
 ├── flynt-starter-theme

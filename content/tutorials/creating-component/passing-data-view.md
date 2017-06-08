@@ -10,11 +10,11 @@ menu:
     weight: 21
 ---
 
-Now we'll take our static component and make it more useful by allowing our back end user to the data for our quote dynamically.
+Now we'll take our static component and make it more useful by allowing our back end user to add the data for our quote dynamically.
 
 Flynt leverages the WordPress plugin [Advanced Custom Fields (ACF)](https://advancedcustomfields.com) so that we can quickly and easily add fields for each component to WordPress edit screens.
 
-Fields are defined inside each component using a JSON configuration file named `fields`. Beging by creating `fields.json` inside your 'BlockQuote' component folder so that your file tree now looks like this:
+Fields are defined inside each component using a JSON configuration file named `fields`. Beging by creating `fields.json` inside your 'BlockQuote' component folder so that your theme folder now looks like this:
 
 ```
 ├── flynt-starter-theme
@@ -77,9 +77,9 @@ To output the data that the user enters into these fields, we need to replace th
 Refresh your page and you'll see... nothing! That's because we haven't added any data to the WordPress back end yet. To do this, we're going to take advantage of ACF's [Flexible Content](https://www.advancedcustomfields.com/resources/flexible-content/) field, meaning we will setup our component so that the user can add it to any page they wish.
 
 ## Adding your component to a field group
-Because Flynt uses ACF, we can group together fields and assign each group location rules for where they should show up in the WordPress administrator back end. We do this using JSON configuration files, all of which can be found in `config/fieldGroups`.
+Because Flynt uses ACF, we can group together fields and assign each group [location rules](https://www.advancedcustomfields.com/resources/creating-a-field-group/#location) for where they should show up in the WordPress administrator back end. We do this using JSON configuration files, all of which can be found in `config/fieldGroups`.
 
-Since we want to make our component available on all pages, we will add our component to the `pageComponents.json` fieldGroup in `config/fieldGroups/pageComponents.json`. 
+Since we want to make our component available on all pages, we will add our component to the `pageComponents.json` fieldGroup in `config/fieldGroups/pageComponents.json`.
 
 Replace the contents of `pageComponents.json` with the following:
 
