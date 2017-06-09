@@ -16,7 +16,7 @@ Flynt leverages the WordPress plugin [Advanced Custom Fields (ACF)](https://adva
 
 ## Creating a field group
 
-Because Flynt uses ACF, we can create groups of content fields and assign each group [location rules](https://www.advancedcustomfields.com/resources/creating-a-field-group/#location) for where they should show up in the WordPress administrator back end. We do this using JSON configuration files, all of which can be found in `config/fieldGroups`.
+Because Flynt uses ACF, we can create groups of content fields and assign each group [location rules](https://www.advancedcustomfields.com/resources/creating-a-field-group/#location) for where they should show up in the WordPress administrator back end. This is called a "field group". We create field groups using JSON configuration files, all of which can be found in `config/fieldGroups`.
 
 Before we create the individual content fields for our component, we will begin by preparing our field group. Since we want to make our component available on all pages, we will add our `BlockQuote` component to the `pageComponents.json` field group in `config/fieldGroups/pageComponents.json`.
 
@@ -61,13 +61,13 @@ Inside the `layouts` of our flexible content field, we tell Flynt to look for th
 }
 ```
 
-Now we need to create these fields and update our view template.
+Now we need to create these "layout" fields for our `BlockQuote` component!
 
 ## Creating a Fields File
 
-Inside each component, fields are defined in a JSON configuration file named `fields.json`. In this file, we now need to create an array of fields with the key "layout".
+Inside each component, fields are defined in a JSON configuration file named `fields.json`.
 
-Begin by creating `fields.json` inside your 'BlockQuote' component folder so that your theme folder looks like this:
+Begin by creating `fields.json` inside your `BlockQuote` component folder so that your theme folder looks like this:
 
 ```
 ├── flynt-starter-theme

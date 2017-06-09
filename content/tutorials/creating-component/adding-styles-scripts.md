@@ -35,10 +35,10 @@ Next, lets open `style.styl` and add some basic styling. We'll be using the [rec
     border-left: 5px solid #558c89
 ```
 
-Providing you have run `flynt start` in your terminal, Flynt will now compile `Components/BlockQuote/style.styl` into `dist/Components/BlockQuote/style.css`.
+Providing you have run `flynt start` in your terminal (from the flynt theme directory), Flynt will now compile `Components/BlockQuote/style.styl` into `dist/Components/BlockQuote/style.css`.
 
 ## Enqueuing your assets
-**There is one crucial step missing.** To load these styles into the front end, you must enqueue these styles using the `functions.php` file of your component. The [functions file](documentation/components/server-side-logic/) can be used for all of your custom server side logic that is specific to your component.
+There is **one crucial step** missing. To load these styles into the front end, you must enqueue these styles using the `functions.php` file of your component. The [functions file](documentation/components/server-side-logic/) can be used for all of your custom server side logic that is specific to your component.
 
 First, create `functions.php` inside your BlockQuote component. Your theme folder should now look like this:
 
