@@ -16,11 +16,11 @@ To quote the [Google primer on Custom Elements](https://developers.google.com/we
 
 We highly recommend reading through the full [Custom Elements primer on Google's Web Fundamentals](https://developers.google.com/web/fundamentals/getting-started/primers/customelements).
 
-By default, to provide sufficient cross-browser support for custom elements, Flynt implements a polyfill within the [DocumentDefault component](/add-link).
+By default, to provide sufficient cross-browser support for custom elements, Flynt implements a polyfill within the [DocumentDefault component](https://github.com/flyntwp/flynt-starter-theme/tree/master/Components/DocumentDefault).
 
 ### The `is` attribute
 
-In the view template, the `is` attribute is used to declare a component as a custom element. This means we are able to extend native HTML elements ([read more about this here](https://developers.google.com/web/fundamentals/getting-started/primers/customelements#extendhtml)). [We are also able to use this attribute to scope our component styles.](styles.md#scope)
+In the view template, the `is` attribute is used to declare a component as a custom element. This means we are able to extend native HTML elements ([read more about this here](https://developers.google.com/web/fundamentals/getting-started/primers/customelements#extendhtml)). [We are also able to use this attribute to scope our component styles.](/guide/best-practices/styles/#scope)
 
 ```twig
 <div is="flynt-example-component" class="flyntComponent">

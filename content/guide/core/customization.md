@@ -93,7 +93,7 @@ That's it! This will provide basic Sass support, along with [Jeet Sass](http://j
 
 ## Changing Template Language
 
-Whilst the theme uses [Twig](twig.sensiolabs.org) as the default template language, this is not strictly enforced.
+Whilst the theme uses [Twig](https://twig.sensiolabs.org) as the default template language, this is not strictly enforced.
 
 ### PHP Templates
 To use plain PHP, simply create `index.php`, rather than `index.twig`.
