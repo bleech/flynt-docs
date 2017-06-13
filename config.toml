@@ -104,14 +104,14 @@ googleAnalytics = ""
   weight = 60
 
 [[menu.main]]
-  name   = "Resources"
-  identifier = "resources"
-  url    = "/guide/resources/"
+  name   = "Best Practices"
+  url    = "/guide/best-practices/"
   parent = "Guide"
   weight = 70
 
 [[menu.main]]
-  name   = "Best Practices"
-  url    = "/guide/best-practices/"
+  name   = "Resources"
+  identifier = "resources"
+  url    = "/guide/resources/"
   parent = "Guide"
   weight = 80
