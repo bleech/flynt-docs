@@ -13,7 +13,7 @@ googleAnalytics = ""
   description = "The component based WordPress framework for development teams and their clients."
   copyright = "Released under the MIT license"
   version = "0.1.0"
-  logo = "images/logo.jpeg"
+  logo = "images/logo.svg"
   favicon = "images/favicon.ico"
 
   permalink = "#"
