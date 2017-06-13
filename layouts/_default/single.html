@@ -32,8 +32,8 @@
       {{ end }}
     </ul>
     {{ end }}
-    
-    
+
+
     </div>
     <div class="content">
 
@@ -56,6 +56,10 @@
 
       <div class="markdowned">
         {{ .Content }}
+      </div>
+
+      <div class="editCta">
+        <a class="editCta-link" href="{{ .Site.Params.doc_repo_url }}/edit/master/content{{ substr .URL 0 -1 }}.md">Edit this page on Github</a>
       </div>
     </div>
 </div>
