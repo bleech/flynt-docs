@@ -19,6 +19,8 @@ A component is a self-contained building-block. As such, each component is kept 
   ├── fields.json
   ├── functions.php
   ├── index.twig
+  ├── preview-mobile.jpg
+  ├── preview-desktop.jpg
   ├── README.md
   ├── script.js
   ├── style.styl
