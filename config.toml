@@ -12,13 +12,6 @@ googleAnalytics = ""
   author = "bleech GmbH"
   description = "The component based WordPress framework for development teams and their clients."
   copyright = "Released under the MIT license"
-
-  # Repository
-  provider = "GitHub"
-  repo_url = "https://github.com/flyntwp/flynt-starter-theme"
-  doc_repo_url = "https://github.com/flyntwp/flynt-docs"
-  organisation_url = "https://github.com/flyntwp"
-
   version = "0.1.0"
   logo = "images/logo.jpeg"
   favicon = "images/favicon.ico"
@@ -39,6 +32,12 @@ googleAnalytics = ""
     [params.font]
       text = "Roboto"
       code = "Roboto Mono"
+
+# Repository
+[params.repo]
+  theme_url = "https://github.com/flyntwp/flynt-starter-theme"
+  docs_url = "https://github.com/flyntwp/flynt-docs"
+  organisation_url = "https://github.com/flyntwp"
 
 [params.social]
   twitter = "flyntwp"
