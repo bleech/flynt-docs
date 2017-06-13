@@ -2,7 +2,6 @@
 title: Contribution Guidelines
 weight: 91
 aliases:
-  - /resources/
   - /documentation/resources/
 menu:
   main:
