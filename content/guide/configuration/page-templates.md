@@ -38,7 +38,7 @@ Flynt\echoHtmlFromConfigFile('default.json');
 
 Here, we pass the configuration file `default.json` to the [`echoHtmlFromConfigFile`](/guide/core/api/#echo-get-htmlfromconfig) function from the [Flynt Core](/guide/core/) plugin.
 
-All configuration files are found in `config/templates` and define the [components](/guide/components/what-is-component/) and their [areas](/guide/components/what-is-component/#what-is-an-area) which are loaded into the template.
+All configuration files are found in `config/templates` and define the [components](/guide/components/what-is-component/) and their [areas](/guide/components/what-is-component/#what-is-an-area) which are loaded into the template. 
 
 In essence, these templates build a "Construction Plan", which is created and then rendered by the Flynt Core plugin. [The Core section of the documentation explains in detail how this Construction Plan works](/guide/core/construction-plan/).
 
