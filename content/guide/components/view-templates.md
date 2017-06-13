@@ -7,9 +7,11 @@ menu:
     weight: 31
 ---
 
-The "View Template" can be seen as the "V" in any MVC ("Model-View-Controller") framework. In Flynt, view templates are written in the templating engine [Twig](http://twig.sensiolabs.org/), and support everything provided additionally by the WordPress plugin [Timber](http://timber.github.io/timber/).
+The "View Template" can be seen as the "V" in any MVC (["Model-View-Controller"](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)) framework. In Flynt, view templates are written in the templating engine [Twig](http://twig.sensiolabs.org/), and support everything provided additionally by the WordPress plugin [Timber](http://timber.github.io/timber/).
 
-By default, the template file for a component must be named `index.twig`, and must reside inside the component's own directory. Flynt will take this template and output it into HTML in the corresponding location in the `dist` folder.
+In many standard WordPress themes, logic is often included directly into page templates. With Flynt, a view template must not include such logic. It is only for the presentation of data.
+
+By default, the template file for a component must be named `index.twig`, and must reside inside the component's own directory. Flynt will take this template and output it into HTML in the same location in the `dist` folder of the theme.
 
 ```
 ├── flynt-starter-theme
@@ -18,7 +20,7 @@ By default, the template file for a component must be named `index.twig`, and mu
 |  |  |  └── index.twig
 ```
 
-To rename the view template file, take a look at the [TimberLoader feature](https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/TimberLoader/functions.php).
+If you don't like index.twig as a filename, you can change this with the [TimberLoader feature](https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/TimberLoader/functions.php).
 
 All data passed to a component is readily available in the view. This data includes fields configured in the [`content fields`](/guide/components/content-fields/) file of a component, plus data passed with the [`addComponentData` filter](/guide/components/server-side-logic/#flynt-addcomponentdata).
 
@@ -66,6 +68,4 @@ Whereas the `citation` variable is defined in `fields.json` as a user-editable c
 }
 ```
 
-If Twig is not your preferred template language, it is possible to customize this with Flynt Core. [You can read how to change the template language here](/guide/core/customization/#changing-template-language).
-
-<!-- - TODO: Talk about partials -->
+It is possible to [customize the template language using Flynt Core]((/guide/core/customization/#changing-template-language).
