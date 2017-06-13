@@ -11,7 +11,7 @@ menu:
 
 WordPress uses the [template hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/) to determine which PHP file to render for a given request.
 
-With Flynt, all template files can be found under the theme folder, in the `templates` directory.
+With Flynt, all template files can be found in the `templates` folder of the theme.
 
 By default, the following standard WordPress templates are included:
 
