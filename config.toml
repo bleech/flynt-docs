@@ -53,14 +53,9 @@ googleAnalytics = ""
 
 # Top Menu Items
 [[menu.main]]
-  name   = "Documentation"
-  url    = "/documentation/getting-started/what-is-flynt/"
+  name   = "Guide"
+  url    = "/guide/getting-started/what-is-flynt/"
   weight = 20
-
-[[menu.main]]
-  name   = "Tutorials"
-  url    = "/tutorials/creating-component/"
-  weight = 30
 
 [[menu.main]]
   name   = "Flynt Website"
@@ -71,59 +66,52 @@ googleAnalytics = ""
 
 [[menu.main]]
   name   = "Getting Started"
-  url    = "/documentation/getting-started/"
-  parent = "Documentation"
+  url    = "/guide/getting-started/"
+  parent = "Guide"
   weight = 10
 
 [[menu.main]]
   name   = "Configuration"
   identifier = "configuration"
-  url    = "/documentation/configuration/"
-  parent = "Documentation"
+  url    = "/guide/configuration/"
+  parent = "Guide"
   weight = 20
 
 [[menu.main]]
   name   = "Components"
   identifier = "components"
-  url    = "/documentation/components/"
-  parent = "Documentation"
+  url    = "/guide/components/"
+  parent = "Guide"
   weight = 30
 
 [[menu.main]]
   name   = "Features"
-  url    = "/documentation/features/"
-  parent = "Documentation"
+  url    = "/guide/features/"
+  parent = "Guide"
   weight = 40
 
 [[menu.main]]
   name   = "Utils"
-  url    = "/documentation/utils/"
-  parent = "Documentation"
+  url    = "/guide/utils/"
+  parent = "Guide"
   weight = 50
 
 [[menu.main]]
   name   = "Core Plugin"
   identifier = "core"
-  url    = "/documentation/core/"
-  parent = "Documentation"
+  url    = "/guide/core/"
+  parent = "Guide"
   weight = 60
 
 [[menu.main]]
   name   = "Resources"
   identifier = "resources"
-  url    = "/documentation/resources/"
-  parent = "Documentation"
+  url    = "/guide/resources/"
+  parent = "Guide"
   weight = 70
 
 [[menu.main]]
-  name   = "Creating a Component"
-  url    = "/tutorials/creating-component/"
-  parent = "Tutorials"
-  identifier = "creating-component"
-  weight = 10
-
-[[menu.main]]
   name   = "Best Practices"
-  url    = "/tutorials/best-practices/"
-  parent = "Tutorials"
-  weight = 20
+  url    = "/guide/best-practices/"
+  parent = "Guide"
+  weight = 80

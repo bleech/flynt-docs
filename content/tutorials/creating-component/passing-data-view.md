@@ -1,6 +1,7 @@
 ---
 title: "Passing Data to your View"
 weight: 21
+draft: true
 aliases:
   - /tutorials/creating-component/passing-data/
   - /tutorials/creating-component/passing-data-to-your-view/

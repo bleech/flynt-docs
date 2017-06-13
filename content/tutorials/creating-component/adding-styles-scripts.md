@@ -1,6 +1,7 @@
 ---
 title: "Adding Styles and Scripts"
 weight: 22
+draft: true
 menu:
   main:
     parent: creating-component
@@ -20,7 +21,7 @@ Create `style.styl` in your `BlockQuote` folder, so that your theme folder match
 |  |  |  └── style.styl
 ```
 
-Next, lets open `style.styl` and add some basic styling. We'll be using the [recommended Flynt best practices](/tutorials/best-practices/styles/) when it comes to styling our component.
+Next, lets open `style.styl` and add some basic styling. We'll be using the [recommended Flynt best practices](/guide/best-practices/styles/) when it comes to styling our component.
 
 ```stylus
 .flyntComponent[is='flynt-block-quote']
@@ -52,7 +53,7 @@ First, create `functions.php` inside your BlockQuote component. Your theme folde
 |  |  |  └── style.styl
 ```
 
-Inside `functions.php` we will use the [Components feature](/documentation/features/what-is-feature/) inside the [WordPress `wp_enqueue_scripts` action](https://codex.wordpress.org/Plugin_API/Action_Reference/wp_enqueue_scripts) to enqueue our style file. This 'action' is one of [many hooks provided by WordPress](https://codex.wordpress.org/Plugin_API#Hooks:_Actions_and_Filters) to allow us to 'hook into' the rest of WordPress at a specific time. Flynt comes with a range of features that take advantage of these hooks, which [you can explore here](/documentation/features/what-is-feature).
+Inside `functions.php` we will use the [Components feature](/guide/features/what-is-feature/) inside the [WordPress `wp_enqueue_scripts` action](https://codex.wordpress.org/Plugin_API/Action_Reference/wp_enqueue_scripts) to enqueue our style file. This 'action' is one of [many hooks provided by WordPress](https://codex.wordpress.org/Plugin_API#Hooks:_Actions_and_Filters) to allow us to 'hook into' the rest of WordPress at a specific time. Flynt comes with a range of features that take advantage of these hooks, which [you can explore here](/guide/features/what-is-feature).
 
 Add the following code to `Components/BlockQuote/functions.php`.
 
@@ -111,8 +112,8 @@ That's it - refresh the front end and check your console! You have now completed
   <h3>Next Steps</h3>
 
   <ul>
-    <li><a href="/documentation/components">Explore the full Component documentation.</a></li>
-    <li><a href="/tutorials/best-practices">Learn about our recommended Flynt best practices.</a></li>
+    <li><a href="/guide/components">Explore the full Component documentation.</a></li>
+    <li><a href="/guide/best-practices">Learn about our recommended Flynt best practices.</a></li>
     <li><a href="https://github.com/flyntwp/flynt-docs/issues">Leave feedback regarding this tutorial or the documentation on Github.</a></li>
   </ul>
 </div>
