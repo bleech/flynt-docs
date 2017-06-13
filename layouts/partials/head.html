@@ -22,15 +22,15 @@
 
   <meta property="og:url" content="{{ .Permalink }}">
   {{ with .Site.Title }}<meta property="og:title" content="{{ . }}">{{ end }}
-  <meta property="og:image" content="{{ $.Site.BaseURL }}images/og-share.jpg">
+  <meta property="og:image" content="{{ $.Site.BaseURL }}/images/og-share.jpg">
   <meta property="og:image:height" content="630">
   <meta property="og:image:width" content="1200">
   {{ with .Site.Title }}<meta name="apple-mobile-web-app-title" content="{{ . }}">{{ end }}
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <link rel="shortcut icon" type="image/x-icon" href="{{ $.Site.BaseURL }}{{ with .Site.Params.favicon }}{{ . }}{{ else }}images/favicon.ico{{ end }}">
-  <link rel="icon" type="image/x-icon" href="{{ $.Site.BaseURL }}{{ with .Site.Params.favicon }}{{ . }}{{ else }}images/favicon.ico{{ end }}">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ $.Site.BaseURL }}{{ with .Site.Params.favicon }}{{ . }}{{ else }}/images/favicon.ico{{ end }}">
+  <link rel="icon" type="image/x-icon" href="{{ $.Site.BaseURL }}{{ with .Site.Params.favicon }}{{ . }}{{ else }}/images/favicon.ico{{ end }}">
   <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
 
   <style>
