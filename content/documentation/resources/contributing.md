@@ -1,9 +1,13 @@
 ---
 title: Contribution Guidelines
 weight: 91
+aliases:
+  - /resources/
+  - /documentation/resources/
 menu:
   main:
-    parent: Resources
+    parent: resources
+    name: "Contribution Guidelines"
     weight: 91
 ---
 

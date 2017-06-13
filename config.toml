@@ -63,8 +63,8 @@ googleAnalytics = ""
   weight = 30
 
 [[menu.main]]
-  name   = "Resources"
-  url    = "/resources/contributing/"
+  name   = "Flynt Website"
+  url    = "https://flyntwp.com"
   weight = 40
 
 # Side Menu Items, Parent should match the identifier of the Top Menu Item
@@ -107,6 +107,13 @@ googleAnalytics = ""
   url    = "/documentation/core/"
   parent = "Documentation"
   weight = 60
+
+[[menu.main]]
+  name   = "Resources"
+  identifier = "resources"
+  url    = "/documentation/resources/"
+  parent = "Documentation"
+  weight = 70
 
 [[menu.main]]
   name   = "Creating a Component"
