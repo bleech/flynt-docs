@@ -16,7 +16,7 @@ Flynt leverages the WordPress plugin [Advanced Custom Fields (ACF)](https://adva
 
 ## Creating a field group
 
-Because Flynt uses ACF, we can create groups of content fields and assign each group [location rules](https://www.advancedcustomfields.com/resources/creating-a-field-group/#location) for where they should show up in the WordPress administrator back end. This is called a "field group". We create field groups using JSON configuration files, all of which can be found in `config/fieldGroups`.
+Because Flynt uses [ACF](https://www.advancedcustomfields.com), we can create groups of content fields and assign each group [location rules](https://www.advancedcustomfields.com/resources/creating-a-field-group/#location) for where they should show up in the WordPress administrator back end. This is called a "field group". We create field groups using JSON configuration files, all of which can be found in `config/fieldGroups`.
 
 Before we create the individual content fields for our component, we will begin by preparing our field group. Since we want to make our component available on all pages, we will add our `BlockQuote` component to the `pageComponents.json` field group in `config/fieldGroups/pageComponents.json`.
 

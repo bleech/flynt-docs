@@ -38,7 +38,7 @@ Next, lets open `style.styl` and add some basic styling. We'll be using the [rec
 Providing you have run `flynt start` in your terminal (from the flynt theme directory), Flynt will now compile `Components/BlockQuote/style.styl` into `dist/Components/BlockQuote/style.css`.
 
 ## Enqueuing your assets
-There is **one crucial step** missing. To load these styles into the front end, you must enqueue these styles using the `functions.php` file of your component. The [functions file](documentation/components/server-side-logic/) can be used for all of your custom server side logic that is specific to your component.
+There is **one crucial step** missing. To load these styles into the front end, you must enqueue these styles using the `functions.php` file of your component. The [functions file](/documentation/components/server-side-logic/) can be used for all of your custom server side logic that is specific to your component.
 
 First, create `functions.php` inside your BlockQuote component. Your theme folder should now look like this:
 
@@ -52,7 +52,7 @@ First, create `functions.php` inside your BlockQuote component. Your theme folde
 |  |  |  └── style.styl
 ```
 
-Inside `functions.php` we will use the [Component feature](/documentation/features/what-is-feature/) inside the [WordPress `wp_enqueue_scripts` action](https://codex.wordpress.org/Plugin_API/Action_Reference/wp_enqueue_scripts) to enqueue our style file. This 'action' is one of [many hooks provided by WordPress](https://codex.wordpress.org/Plugin_API#Hooks:_Actions_and_Filters) to allow us to 'hook into' the rest of WordPress at a specific time. Flynt comes with a range of features that take advantage of these hooks, which [you can explore here](/documentation/features/what-is-feature).
+Inside `functions.php` we will use the [Components feature](/documentation/features/what-is-feature/) inside the [WordPress `wp_enqueue_scripts` action](https://codex.wordpress.org/Plugin_API/Action_Reference/wp_enqueue_scripts) to enqueue our style file. This 'action' is one of [many hooks provided by WordPress](https://codex.wordpress.org/Plugin_API#Hooks:_Actions_and_Filters) to allow us to 'hook into' the rest of WordPress at a specific time. Flynt comes with a range of features that take advantage of these hooks, which [you can explore here](/documentation/features/what-is-feature).
 
 Add the following code to `Components/BlockQuote/functions.php`.
 
@@ -99,14 +99,14 @@ class BlockQuote extends window.HTMLDivElement {
 window.customElements.define('flynt-block-quote', BlockQuote, {extends: 'div'})
 ```
 
-To load this script into the front end, you must ensure you have enqueued the assets for this component, [as shown above](/tutorials/creating-component/adding-styles-scripts/#enqueuing-your-assets). Flynt will then look for `Components/BlockQuote/script.js` and enqueue the file if it's found.
+To load this script into the front end, you must ensure you have enqueued the assets for this component, [as shown above](/tutorials/creating-component/adding-styles-scripts/#enqueuing-your-assets). Flynt will then look for `Components/BlockQuote/script.js` and enqueue the file if it is found.
 
-That's it - refresh the front end and check your console! You have now completed your first basic component.
+That's it - refresh the front end and check your console! You have now completed your first component.
 
 <div class="alert alert-steps">
   <h2>Tutorial Complete!</h2>
 
-  <p>Congratulations on creating your first basic component with a view template, dynamic fields, styles, and scripts.</p>
+  <p>Congratulations on creating your first component with a view template, dynamic fields, styles, and scripts.</p>
 
   <h3>Next Steps</h3>
 

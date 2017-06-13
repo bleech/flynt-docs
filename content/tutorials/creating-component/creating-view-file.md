@@ -45,7 +45,7 @@ Your theme folder will now look like this:
 ## Rendering your component
 To render our `BlockQuote` component, we need to add it to a page template.
 
-All template files can be found in the root theme folder, in the `templates` directory. Each PHP template within the `templates` directory takes a simple JSON configuration file, and using the Flynt Core plugin, parses and renders this into HTML.
+All template files can be found in the theme folder, in the `templates` directory. Each PHP template within the `templates` directory takes a simple JSON configuration file, and using the Flynt Core plugin, parses and renders this into HTML.
 
 For example, take `templates/page.php`:
 
