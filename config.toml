@@ -14,7 +14,7 @@ googleAnalytics = ""
   copyright = "Released under the MIT license"
   version = "0.1.0"
   logo = "images/logo.svg"
-  favicon = "images/favicon.ico"
+  favicon = "/images/favicon.ico"
 
   permalink = "#"
 
