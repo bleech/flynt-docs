@@ -13,8 +13,7 @@ The ability to add content fields is provided primarily by the WordPress plugin 
 ├── flynt-starter-theme
 |  ├──Components
 |  |  ├── ExampleComponent
-|  |  |  ├── fields.json
-|  |  |  └── index.twig
+|  |  |  └── fields.json
 ```
 
 Inside `fields.json`, the fields must be registered inside an array with a unique key. For example, here is a single text field registered inside a `contentFields` array:

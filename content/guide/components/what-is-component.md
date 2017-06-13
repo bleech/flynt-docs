@@ -30,3 +30,7 @@ Building components is a sustainable process, meaning every component you develo
 
 ## What is an area?
 Since components are self-contained, areas provide a way to stack our building-blocks together. An area is simply a location within a component where it is possible to add other components.
+
+- example.
+
+## Organising Components into Categories

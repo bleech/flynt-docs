@@ -29,7 +29,7 @@ Flynt comes with the following Utils ready to use:
     <li>
       <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/lib/Utils/Feature.php">Feature</a>
       <br>
-      Register and setup [Flynt Features](/guide/features/what-is-feature/).
+      Register and setup <a href="/guide/features/what-is-feature/">Flynt Features</a>.
     </li>
     <li>
       <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/lib/Utils/FileLoader.php">FileLoader</a>
@@ -50,11 +50,6 @@ Flynt comes with the following Utils ready to use:
       <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/lib/Utils/StringHelpers.php">StringHelpers</a>
       <br>
       A collection of small string utilities.
-    </li>
-    <li>
-      <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/lib/Utils/TimberHelper.php">TimberHelper</a>
-      <br>
-      A collection of utilities for working with <a href="https://github.com/timber/timber/">Timber.</a>
     </li>
   </ul>
 </div>
