@@ -7,7 +7,42 @@ menu:
     weight: 71
 ---
 
-The "Construction Plan" is a hierarchical plan for how the site will be constructed, which is created and then rendered by the Flynt Core plugin.
+The "Construction Plan" is a hierarchical plan for how the site will be constructed. It is created and then rendered by the Flynt Core plugin.
+
+Here is a simple example:
+
+```json
+{
+  "name": "DocumentDefault",
+  "areas": {
+    "layout": [
+      {
+        "name": "LayoutSinglePost",
+        "areas": {
+          "mainHeader": [
+            {
+              "name": "navigationMain"
+            }
+          ],
+          "pageComponents": [
+            {
+              "name": "ComponentLoaderFlexible",
+              "customData": {
+                "fieldGroup": "pageComponents"
+              }
+            }
+          ],
+          "mainFooter": [
+            {
+              "name": "navigationFooter"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+```
 
 ## Configuration
 

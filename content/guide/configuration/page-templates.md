@@ -9,25 +9,26 @@ menu:
     weight: 50
 ---
 
-All template files can be found under the theme root, in the `templates` directory.
+WordPress uses the [template hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/) to determine which PHP file to render for a given request.
 
-By default, the following standard WordPress templates are included. These templates follow the normal [WordPress Template Hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/), and work in exactly the same way:
+With Flynt, all template files can be found under the theme folder, in the `templates` directory.
+
+By default, the following standard WordPress templates are included:
 
 - `404.php`
 - `archive.php`
 - `home.php`
 - `index.php`
-- `page.php`
-- `single.php`
 
-By default, the following custom page template is also included:
+One custom page template is also included:
+
 - `plugin-inactive.php` - This is displayed when the Flynt plugin is disabled.
 
 ## Configuring Page Templates
 
-The structure of each page within the theme is created using a nested JSON object. Each PHP template within the `templates` directory takes a simple JSON configuration file, and using the Flynt Core plugin, parses and renders this into HTML.
+In a standard WordPress theme, custom logic is usually added directly into each template file. With Flynt, this is not the case. Instead, Flynt uses a JSON object to specify which [components](/guide/components/what-is-component/) should be rendered. This means the template files contain a single PHP function call.
 
-For example, take `templates/page.php`:
+For example, take `templates/index.php`:
 
 ```php
 <?php
@@ -35,9 +36,13 @@ For example, take `templates/page.php`:
 Flynt\echoHtmlFromConfigFile('default.json');
 ```
 
-The JSON template configuration files are found in `config/templates`. These configuration files define the [components](/guide/components/what-is-component) and their [areas](/guide/components/what-is-component/#what-is-an-area) which are loaded into the template.
+Here, we pass the configuration file `default.json` to the [`echoHtmlFromConfigFile`](/guide/core/api/#echo-get-htmlfromconfig) function from the [Flynt Core](/guide/core/) plugin.
 
-Take `config/templates/default.json` as an example. This template contains the `DocumentDefault` component, with one area within it: `layout`. The `layout` area contains the `LayoutSinglePost` component, which in turn has three nested [areas](/guide/components/what-is-component/#what-is-an-area): `mainHeader`, `pageComponents`, and `mainFooter`. In addition, the `pageComponents` area contains the `ComponentLoaderFlexible` component.
+All configuration files are found in `config/templates` and define the [components](/guide/components/what-is-component/) and their [areas](/guide/components/what-is-component/#what-is-an-area) which are loaded into the template.
+
+In essence, these templates build a "Construction Plan", which is created and then rendered by the Flynt Core plugin. [The Core section of the documentation explains in detail how this Construction Plan works](/guide/core/construction-plan/).
+
+As an example for one of these config files, take `config/templates/default.json`.
 
 ```json
 {
@@ -64,7 +69,11 @@ Take `config/templates/default.json` as an example. This template contains the `
 }
 ```
 
-The `layout` area is then rendered in the `Components/DocumentDefault/index.twig` template:
+This template contains the `DocumentDefault` component, with one area within it: `layout`. The `layout` area contains the `LayoutSinglePost` component, which in turn has three nested [areas](/guide/components/what-is-component/#what-is-an-area): `mainHeader`, `pageComponents`, and `mainFooter`. In addition, the `pageComponents` area contains the `ComponentLoaderFlexible` component.
+
+To render an area [in the view template of a component](/guide/components/view-templates/), Flynt defines the helper function `area`. In this case, the template files for the DocumentDefault and LayoutSinglePost are as follows:
+
+`Components/DocumentDefault/index.twig`:
 
 ```twig
 <!DOCTYPE html>
@@ -75,4 +84,22 @@ The `layout` area is then rendered in the `Components/DocumentDefault/index.twig
     {{ wp_footer }}
   </body>
 </html>
+```
+
+`Components/LayoutSinglePost/index.twig`:
+
+```twig
+<div is="flynt-layout-single-post" class="flyntComponent">
+  <section class="pageWrapper">
+    <header class="mainHeader">
+      {{ area('mainHeader') }}
+    </header>
+    <main class="mainContent" role="main">
+      {{ area('pageComponents') }}
+    </main>
+    <footer class="mainFooter">
+      {{ area('mainFooter') }}
+    </footer>
+  </section>
+</div>
 ```
