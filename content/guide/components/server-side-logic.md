@@ -13,7 +13,7 @@ Flynt implements the [Wordpress functions.php concept](https://codex.wordpress.o
 - Add custom logic (classes, hooks, filters) to a component.
 - Add additional data to a component.
 
-As with styles and scripts, keeping this logic separated at a component level ensures the component is quick to understand and simple to reuse.
+As with styles and scripts, keeping this logic separated at a component level ensures the component is quick to understand and easy to reuse.
 
 ## Namespace
 
@@ -74,7 +74,9 @@ add_action('wp_enqueue_scripts', function ()
 });
 ```
 
-This will look for `dist/vendor/slick.js` and `dist/vendor/slick.css` and enqueue the files if found. **Never add files manually to the `dist` folder.** To compile dependencies into the `dist/vendor` folder, see the [section on copying vendor files here](/guide/components/client-side-scripts/#add-third-party-dependencies).
+This will look for `flynt-starter-theme/dist/vendor/slick.js` and `flynt-starter-theme/dist/vendor/slick.css` and enqueue the files if found.
+
+**Never add files manually to the `dist` folder of the theme.** To compile dependencies into the `dist/vendor` folder of the theme, see the [section on copying vendor files here](/guide/components/client-side-scripts/#add-third-party-dependencies).
 
 ## Add and Modify Component Data with Filters
 [Filters are provided by WordPress](https://codex.wordpress.org/Plugin_API) to allow a plugin to 'hook into' the rest of WordPress and call functions at specific times. [Flynt Core](/guide/core/) defines two filters most often used inside `functions.php` for the purpose of adding component data and [areas](/guide/components/what-is-component#what-is-an-area). These are `Flynt/addComponentData` and `Flynt/dynamicSubcomponents`.
