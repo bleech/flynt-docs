@@ -39,7 +39,3 @@ Do not write "it's", "they've". Write "it is", "they have".
 ## Test All Code Snippets
 
 Please make sure all code snippets are tested and will definitely work.
-
-## Tense: Avoid using '-ing'
-
-Where possible, do not add '-ing' to verbs. Rather than "adding", "changing" - use "add" and "change".
