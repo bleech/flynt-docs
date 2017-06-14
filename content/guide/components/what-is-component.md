@@ -33,6 +33,23 @@ To quickly and easily build new components, we recommend using the [Flynt Yeoman
 ## What is an area?
 Since components are self-contained, areas provide a way to stack our building-blocks together. An area is simply a location within a component where it is possible to add other components.
 
+Areas are most often defined inside [page templates](/guide/configuration/page-templates/#configuring-page-templates) and are output using the helper function `area` in the [view template](/guide/components/view-templates/) of a component.
+
+For example, the `DocumentDefault` component renders the `layout` area in `DocumentDefault/index.twig`:
+
+```twig
+<!DOCTYPE html>
+<html class="flyntComponent {{ body_class }}" lang="{{ site.language }}" dir="{{ dir }}" is="flynt-document-default">
+  <head><!--...--></head>
+  <body role="document">
+    {{ area('layout') }}
+    {{ wp_footer }}
+  </body>
+</html>
+```
+
+The `area` helper function is created by the [TimberLoader](https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/TimberLoader/README.md) feature using the `renderComponent` filter provided by the [Flynt Core plugin](/guide/core/).
+
 ## Organising Components into Categories
 
 Components are always categorised according to their predominant use case. This helps to clarify the purpose of a component and in quickly identifying an appropriate component to re-use. The available categores are as follows:
