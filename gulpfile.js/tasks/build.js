@@ -7,6 +7,7 @@ module.exports = function() {
       'clean',
       ['copy', 'sass', 'uglify', 'setBase:production', 'buildSearchIndex'],
       'hugo',
+      'rev',
       cb
     )
   });

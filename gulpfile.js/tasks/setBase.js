@@ -7,7 +7,7 @@ module.exports = function (config) {
   developmentBase += '\ndocument.write(\'<base href="\' + theBaseUrl + \'"/>\');'
   developmentBase += '\n</script>'
 
-  const prodUrl = config.env.prod.baseUrl
+  const prodUrl = process.env.HUGO_BASE_URL || config.env.prod.baseUrl
 
   let productionBase = '\n<script type="text/javascript">'
   productionBase += '\ntheBaseUrl = "'+ prodUrl + '";'
@@ -21,4 +21,3 @@ module.exports = function (config) {
     fs.writeFileSync('./layouts/partials/base-url.html', '\n' + productionBase + '\n<base href="' + prodUrl + '" />')
   });
 }
-
