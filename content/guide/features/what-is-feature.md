@@ -10,9 +10,9 @@ menu:
     weight: 40
 ---
 
-With WordPress, it is easy to create one large functions.php file, crammed full of all the custom logic your theme may need. This can get messy. In Flynt, we split each piece of functionality into smaller, self-contained feature bundles.
+With WordPress, it is easy to create one large functions.php file, crammed full of all the custom logic your theme may need. This can get messy. In Flynt, we split each piece of functionality into smaller, self-contained feature bundles. All Features are located in the `Features` folder of the [Flynt Starter Theme](https://github.com/flyntwp/flynt-starter-theme/blob/master/Features).
 
-In most cases, features add global hooks and filters that affect the project on a global level. With this in mind, each feature is built with reusability in mind.
+In most cases, features add global hooks and filters that affect the project on a global level. With this in mind, each feature is built with reusability in mind. It is possible to [create](/guide/features/creating-features/) and [modify](/guide/features/hooking-into-features/) as many features as needed.
 
 Flynt comes with a core set of ready to go features:
 
