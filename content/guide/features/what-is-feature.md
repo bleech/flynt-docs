@@ -10,9 +10,9 @@ menu:
     weight: 40
 ---
 
-With WordPress, it is easy to create one large functions.php file, crammed full of all the custom logic your theme may need. This can get messy. In Flynt, we split each piece of functionality into smaller, self-contained feature bundles. All Features are located in the `Features` folder of the [Flynt Starter Theme](https://github.com/flyntwp/flynt-starter-theme/blob/master/Features).
+With WordPress, it is easy to create one large `functions.php` file, crammed full of all the custom logic your theme may need. This can get messy. In Flynt, we split each piece of functionality into smaller, self-contained feature bundles. All Features are located in the `Features` folder of the [Flynt Starter Theme](https://github.com/flyntwp/flynt-starter-theme/blob/master/Features).
 
-In most cases, features add global hooks and filters that affect the project on a global level. With this in mind, each feature is built with reusability in mind. It is possible to [create](/guide/features/creating-features/) and [modify](/guide/features/hooking-into-features/) as many features as needed.
+In most cases, features add global hooks and filters that affect the project on a global level. With this in mind, each feature is built with reusability in mind. It is possible to [create](/guide/features/creating-features/) and [modify](/guide/features/hooking-into-features/) features as needed.
 
 Flynt comes with a core set of ready to go features:
 
@@ -24,7 +24,7 @@ Flynt comes with a core set of ready to go features:
     </li>
     <li>
       <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/AdminComponentPreview/README.md">AdminComponentPreview</a><br>
-      Show screenshots of components in the WP back-end, and on the WP admin bar.
+      Show screenshots of components in the WordPress back end, and enable previews via the admin bar.
     </li>
     <li>
       <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/AdminNotices/README.md">AdminNotices</a><br>
@@ -42,6 +42,14 @@ Flynt comes with a core set of ready to go features:
       <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/Components/README.md">Components</a><br>
       Register &amp; configure Flynt Components.
     </li>
+    <li>
+      <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/CustomPostTypes/README.md">CustomPostTypes</a><br>
+      Create custom post types with JSON config files.
+    </li>
+    <li>
+      <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/CustomTaxonomies/README.md">CustomTaxonomies</a><br>
+      Create custom taxonomies with JSON config files.
+    </li>    
     <li>
       <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/GoogleAnalytics/">GoogleAnalytics</a><br>
       Add the Google Analytics tracking script.
@@ -77,14 +85,6 @@ Flynt comes with a core set of ready to go features:
     <li>
       <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/TinyMce/README.md">TinyMce</a><br>
       Clean-up the WP content editor toolbar.
-    </li>
-    <li>
-      <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/CustomPostTypes/README.md">CustomPostTypes</a><br>
-      Create custom post types with JSON config files.
-    </li>
-    <li>
-      <a href="https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/CustomTaxonomies/README.md">CustomTaxonomies</a><br>
-      Create custom taxonomies with JSON config files.
     </li>
   </ul>
 </div>

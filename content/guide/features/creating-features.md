@@ -7,9 +7,11 @@ menu:
     weight: 42
 ---
 
+To create Flynt Features quickly and easily, we recommend using the [Flynt Yeoman Generator](https://github.com/flyntwp/generator-flynt).
+
 ## Add functions.php
 
-This is the only file a feature requires. The only additional requirement is to add the `Flynt` namespace:
+This is the only file a feature requires. The only additional requirement is to add the `Flynt\Features\<YourFeatureName>` namespace:
 
 ```php
 <?php
@@ -29,7 +31,7 @@ Features should be easy to reuse and easy to understand. We strongly recommend a
 Features support the addition of styles, scripts, and templates. All file types supported within components (Stylus, CSS, JS, Twig, and PHP files) will also be compiled and built in exactly the same way for features.
 
 ## Add ACF Fields
-Sometimes, a feature may need to add ACF fields to allow the user to configure the options from the back-end. Again, this works exactly as with components. Add `fields.json` to the feature, and then configure the ACF fields:
+Sometimes, a feature may need to add ACF fields to allow the user to configure the options from the back end. Again, this [works exactly as with components](/guide/components/content-fields/). Add a `fields.json` file to the feature, and then configure the ACF fields:
 
 ```
 {
@@ -45,4 +47,4 @@ Sometimes, a feature may need to add ACF fields to allow the user to configure t
 }
 ```
 
-[You can read more on authoring ACF Fields here.](/guide/components/content-fields)
+[You can read more on authoring ACF Fields here.](/guide/components/content-fields/)
