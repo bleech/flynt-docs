@@ -20,7 +20,7 @@ ExampleComponent/
 
 ## Compiling Assets
 
-When gulp is running, excluding Javascript and Stylus files, all other files within the Components folder will be directly copied to the `dist` folder.
+When gulp is running, all files (other than JavaScript and Stylus files) within the Components folder will be directly copied to the `dist` folder.
 
 All stylus files, with the exception of partials, will be piped through [Autoprefixer](https://github.com/postcss/autoprefixer) and then compiled into the `dist` folder as CSS. [Learn more about component styles here](/guide/components/styling).
 

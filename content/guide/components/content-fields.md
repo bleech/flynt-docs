@@ -7,7 +7,7 @@ menu:
     weight: 34
 ---
 
-The ability to add content fields is provided primarily by the WordPress plugin [Advanced Custom Fields Pro (ACF)](https://www.advancedcustomfields.com/pro/). Flynt provides the ability to register these fields at the component level within the JSON configuration file `fields.json`, so that content fields can be encapsulated within the component along with everything else:
+The ability to add content fields is provided primarily by the WordPress plugin [Advanced Custom Fields Pro (ACF)](https://www.advancedcustomfields.com/pro/). Using the [ACF Field Group Composer](https://github.com/flyntwp/acf-field-group-composer), Flynt provides the ability to register these fields at the component level within the JSON configuration file `fields.json`, so that content fields can be encapsulated within the component along with everything else:
 
 ```
 ├── flynt-starter-theme
