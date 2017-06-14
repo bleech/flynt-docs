@@ -159,7 +159,7 @@ add_filter('Flynt/dynamicSubcomponents?name=FlexibleContent', function ($areas, 
 
 ## Using Features and Utils
 
-Flynt comes with a range of features and utility functions. To use any of them within a component, you must only `use` the feature or utility at the top of the `functions.php` file, below the component namespace.
+Flynt comes with a range of features and utility functions. To use any of them within a component, you must `use` the feature or utility at the top of the `functions.php` file, below the component namespace.
 
 Features are always namespaced with `Flynt\Features`.
 
@@ -170,6 +170,8 @@ namespace Flynt\Components\ExampleComponentName;
 
 use Flynt\Features\Components\Component;
 ```
+
+[Learn more about using features in the Features section](/guide/features/using-features/).
 
 Utils are always namespaced with `Flynt\Util`.
 
@@ -186,3 +188,5 @@ add_filter('Flynt/addComponentData?name=ExampleComponentName', function ($data)
     return $data;
 });
 ```
+
+[Learn more about using utils in the Utils section](/guide/utils/using-utils/).
