@@ -53,7 +53,7 @@ The `area` helper function is created by the [TimberLoader](https://github.com/f
 ## Organizing Components into Categories
 
 Components are always categorized according to their predominant use case. This helps to clarify the purpose of a component and in quickly identifying an appropriate component to re-use. The name of every component is prefixed with one of the following categories:
-- Table
+
 <div class="alert alert-list">
   <ul>
     <li>
@@ -66,7 +66,7 @@ Components are always categorized according to their predominant use case. This 
     </li>
     <li>
       <strong>Calendar</strong><br>
-      For a component where the mean feature is a calendar.
+      For a component where the main feature is a calendar.
     </li>
     <li>
       <strong>ComponentLoader</strong><br>

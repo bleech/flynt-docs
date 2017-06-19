@@ -26,6 +26,6 @@ use Flynt\Utils\Asset;
 $image = Asset::requireUrl('Components/ListPosts/assets/image.jpg');
 ```
 
-All Utils are loaded in `lib/Init.php`, and are availaible for use in all files loaded after this point in execution. Any PHP file loaded before this point will need to take care of loading the Util itself.
+All Utils are loaded in `lib/Init.php`, and are available for use in all files loaded after this point in execution. Any PHP file loaded before this point will need to take care of loading the Util itself.
 
 See the ["What is a Util?"](/guide/utils/what-is-util/) page to see a full list of Flynt Utils and what they are for.
