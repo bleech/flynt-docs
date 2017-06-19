@@ -68,4 +68,4 @@ Whereas the `citation` variable is defined in `fields.json` as a user-editable c
 }
 ```
 
-It is possible to [customize the template language using Flynt Core](/guide/core/customization/#changing-template-language).
+It is possible to [customize the template language using Flynt Core](/guide/core/customization/#changing-the-template-language).
