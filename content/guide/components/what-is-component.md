@@ -48,12 +48,12 @@ For example, the `DocumentDefault` component renders the `layout` area in `Docum
 </html>
 ```
 
-The `area` helper function is created by the [TimberLoader](https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/TimberLoader/README.md) feature using the `renderComponent` filter provided by the [Flynt Core plugin](/guide/core/).
+The `area` helper function is created by the [TimberLoader](https://github.com/flyntwp/flynt-starter-theme/blob/master/Features/TimberLoader/README.md) feature using the `renderComponent` filter provided by [Flynt Core](/guide/core/).
 
-## Organising Components into Categories
+## Organizing Components into Categories
 
-Components are always categorised according to their predominant use case. This helps to clarify the purpose of a component and in quickly identifying an appropriate component to re-use. The available categores are as follows:
-
+Components are always categorized according to their predominant use case. This helps to clarify the purpose of a component and in quickly identifying an appropriate component to re-use. The name of every component is prefixed with one of the following categories:
+- Table
 <div class="alert alert-list">
   <ul>
     <li>
@@ -61,20 +61,12 @@ Components are always categorised according to their predominant use case. This 
       For collapsable content, e.g. FAQs.
     </li>
     <li>
-      <strong>Audio</strong><br>
-      Styled audio players.
-    </li>
-    <li>
       <strong>Block</strong><br>
       The fallback for full width components. Use only when there is no better, more specific category.
     </li>
     <li>
-      <strong>Box</strong><br>
-      A content box wrapped in or on top of something else (like the css box model).
-    </li>
-    <li>
-      <strong>Cols</strong><br>
-      Its elements will never flow into a new row.
+      <strong>Calendar</strong><br>
+      For a component where the mean feature is a calendar.
     </li>
     <li>
       <strong>ComponentLoader</strong><br>
@@ -117,10 +109,6 @@ Components are always categorised according to their predominant use case. This 
       A series of links used as a navigation.
     </li>
     <li>
-      <strong>Pagination</strong><br>
-      An ordered list used to navigate archive pages.
-    </li>
-    <li>
       <strong>Sidebar</strong><br>
       Typically part of a layout that holds other components.
     </li>
@@ -129,12 +117,12 @@ Components are always categorised according to their predominant use case. This 
       No matter if it slides, fades, or explodes; it displays a series of content.
     </li>
     <li>
-      <strong>Tabs</strong><br>
-      Uses horizontally or vertically aligned buttons to change content in a target container.
+      <strong>Table</strong><br>
+      For a component that displays tabular data.
     </li>
     <li>
-      <strong>Video</strong><br>
-      Whenever a video is the main feature.
+      <strong>Tabs</strong><br>
+      Uses horizontally or vertically aligned buttons to change content in a target container.
     </li>
   </ul>
 </div>

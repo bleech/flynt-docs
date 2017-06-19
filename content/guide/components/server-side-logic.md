@@ -79,7 +79,7 @@ This will look for `flynt-starter-theme/dist/vendor/slick.js` and `flynt-starter
 **Never add files manually to the `dist` folder of the theme.** To compile dependencies into the `dist/vendor` folder of the theme, see the [section on copying vendor files here](/guide/components/client-side-scripts/#add-third-party-dependencies).
 
 ## Add and Modify Component Data with Filters
-[Filters are provided by WordPress](https://codex.wordpress.org/Plugin_API) to allow a plugin to 'hook into' the rest of WordPress and call functions at specific times. [Flynt Core](/guide/core/) defines two filters most often used inside `functions.php` for the purpose of adding component data and [areas](/guide/components/what-is-component#what-is-an-area). These are `Flynt/addComponentData` and `Flynt/dynamicSubcomponents`.
+[Filters are provided by WordPress](https://codex.wordpress.org/Plugin_API) to allow a plugin to 'hook into' the rest of WordPress and call functions at specific times. [Flynt Core](/guide/core/) defines two filters most often used inside `functions.php` for the purpose of adding component data and [areas](/guide/components/what-is-component#what-is-an-area). These are [`Flynt/addComponentData`](/guide/core/api/#flynt-addcomponentdata) and [`Flynt/dynamicSubcomponents`](/guide/core/api/#flynt-dynamicsubcomponents-name-config-name).
 
 ### `Flynt/addComponentData`
 This filter can be used to add to or modify your component's data before it is passed to the view and rendered. This can be used, for example, to fetch and pass posts from a custom post type:
@@ -189,4 +189,4 @@ add_filter('Flynt/addComponentData?name=ExampleComponentName', function ($data)
 });
 ```
 
-[Learn more about using utils in the Utils section](/guide/utils/using-utils/).
+[Learn more about using Utils in the Utils section](/guide/utils/using-utils/).
