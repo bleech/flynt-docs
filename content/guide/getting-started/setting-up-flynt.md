@@ -24,7 +24,7 @@ These tools must be available in your system's PATH environment.
 | [Yarn](https://yarnpkg.com/)*                           | >= 0.21 |
 | [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer)** | >= 2.5  |
 
-\*_You can use npm as well, but Yarn is strongly recommended._
+\*_You can use npm as well, but Yarn is strongly recommended._  
 \*\*_Not strictly required, but strongly recommended._
 
 ### Server
