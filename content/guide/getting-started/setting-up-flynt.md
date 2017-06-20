@@ -24,7 +24,7 @@ These tools must be available in your system's PATH environment.
 | [Yarn](https://yarnpkg.com/)*                           | >= 0.21 |
 | [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer)** | >= 2.5  |
 
-\*_You can use npm as well, but Yarn is strongly recommended._  
+\*_You can use npm as well, but Yarn is strongly recommended._
 \*\*_Not strictly required, but strongly recommended._
 
 ### Server
@@ -42,7 +42,7 @@ As soon as you have your environment set up, follow the steps below to create a 
 
 1. Using the command line, install the Flynt CLI:
   ```
-  yarn global add flyntwp/flynt-cli
+  yarn global add @flyntwp/flynt-cli
   ```
 
 2. Run the create command and follow the instructions:
