@@ -57,7 +57,7 @@ The available properties are as follows:
 | **parentData**<br>*(array/object)* | Replace parent data of a component (only relevant for advanced use cases) |
 | **areas**<br>*(array/object of arrays)* | Defines a component's child components grouped into named areas. The key is the area name, the value is an array of components. |
 
-## Building the construction plan
+## Building the Construction Plan
 
 From this configuration, Flynt Core will then build a Construction Plan by recursively following the below steps:
 
@@ -82,7 +82,7 @@ From this configuration, Flynt Core will then build a Construction Plan by recur
 7. **Do the same for sub components specified in - and dynamically added to - *areas*.**
    The final step for one component is doing the same construction logic for each sub component.
 
-## Rendering the construction plan
+## Rendering the Construction Plan
 
 The construction plan contains all the information needed to be rendered. This recursive rendering can be summarized in the following steps:
 

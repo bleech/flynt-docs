@@ -36,8 +36,8 @@
 
 ## Usage
 
-### Adding menu items
-#### Top menu item
+### Adding Menu Items
+#### Top Menu Item
 1. Go to the `config.toml` file
 2. Go to the `# Top Menu Items` comment
 3. Add a top menu item like this:
@@ -56,7 +56,7 @@
 |identifier |string |Should be **unique** for every item!               | 
 |weight     |int    |For the order of menu items, lower is more on top  |
 
-#### Side Menu item
+#### Side Menu Item
 1. Go to the `config.toml` file
 2. Go to the `# Side Menu Items` comment
 3. Add a side menu item like this:
@@ -77,7 +77,7 @@
 |identifier |string |Should be **unique** for every item!               | 
 |weight     |int    |For the order of menu items, lower is more on top  |
 
-#### Side submenu item
+#### Side Submenu Item
 1. Go to the page that should be added to the side menu in the `Content` folder.
 2. At the top of the page add this to the parameter:
 ```
@@ -134,7 +134,7 @@ menu:
         weight: 30 #Different from v1.0.0
 ```
 
-### Adding Redirects for old content
+### Adding Redirects for Old Content
 
 This is done by adding the old URL (the one you want to redirect) as an alias to the new destination page.
 
@@ -163,6 +163,8 @@ The main people in charge of this repo are:
 ## Contribute
 
 To contribute, please use github [issues](https://github.com/flyntwp/flynt-docs/issues). Pull requests are accepted.
+
+Please also take a moment to read the [Contributing Guidelines](https://github.com/flyntwp/guidelines/blob/master/CONTRIBUTING.md) and [Code of Conduct](https://github.com/flyntwp/guidelines/blob/master/CODE_OF_CONDUCT.md).
 
 If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 

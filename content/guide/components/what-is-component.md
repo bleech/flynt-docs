@@ -30,7 +30,7 @@ Building components is a sustainable process, meaning every component you develo
 
 To quickly and easily build new components, we recommend using the [Flynt Yeoman Generator](https://github.com/flyntwp/generator-flynt).
 
-## What is an area?
+## What is an Area?
 Since components are self-contained, areas provide a way to stack our building-blocks together. An area is simply a location within a component where it is possible to add other components.
 
 Areas are most often defined inside [page templates](/guide/configuration/page-templates/#configuring-page-templates) and are output using the helper function `area` in the [view template](/guide/components/view-templates/) of a component.

@@ -36,7 +36,7 @@ These tools must be available in your system's PATH environment.
 
 Additionally, you will need a way to manage your virtual host setup. This can be done either manually via a hosts file or with tools like [Mamp Pro](https://www.mamp.info/en/mamp-pro/).
 
-## Creating a Flynt project
+## Creating a Flynt Project
 
 As soon as you have your environment set up, follow the steps below to create a new Flynt project.
 
