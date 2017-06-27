@@ -22,7 +22,7 @@ ExampleComponent/
 
 When gulp is running, all files (other than JavaScript and Stylus files) within the Components folder will be directly copied to the `dist` folder.
 
-All stylus files, with the exception of partials, will be piped through [Autoprefixer](https://github.com/postcss/autoprefixer) and then compiled into the `dist` folder as CSS. [Learn more about component styles here](/guide/components/styling).
+All stylus files, with the exception of partials, will be piped through [Autoprefixer](https://github.com/postcss/autoprefixer) and then compiled into the `dist` folder as CSS. [Learn more about component styles here](/guide/components/styling/).
 
 Javascript files **with the following file names only** will be compiled to the `dist` folder using [Babel](https://babeljs.io/):
 
@@ -33,7 +33,7 @@ Javascript files **with the following file names only** will be compiled to the 
 [Learn more about component scripts here.](/guide/components/client-side-scripts/)
 
 ## Using Static Assets in the View
-To use a static asset URL in the view of a component, it is necessary to use the [Flynt Asset util](https://github.com/flyntwp/flynt-starter-theme/blob/master/lib/Utils/Asset.php) within the [`addComponentData` filter](/guide/components/server-side-logic/#flynt-addcomponentdata). 
+To use a static asset URL in the view of a component, it is necessary to use the [Flynt Asset util](https://github.com/flyntwp/flynt-starter-theme/blob/master/lib/Utils/Asset.php) within the [`addComponentData` filter](/guide/components/server-side-logic/#flynt-addcomponentdata).
 
 This is because all assets are automatically revisioned by [gulp-rev](https://github.com/sindresorhus/gulp-rev) (for example, `exampleIcon.svg` → `exampleIcon-d41d8cd98f.svg`). With the Asset util, we can reference the rev-manifest and fetch the correct file. For example, in the `functions.php` of a component:
 

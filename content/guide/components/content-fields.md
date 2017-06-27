@@ -51,6 +51,6 @@ All of the fields inside the `contentFields` array can then be added to a field 
 }
 ```
 
-[See the field groups page for a detailed explanation of how to use these](/guide/configuration/field-groups).
+[See the field groups page for a detailed explanation of how to use these](/guide/configuration/field-groups/).
 
-Advanced Custom Fields comes with many field types by default, all of which can be used with Flynt. The JSON properties available for each field type can be seen in the [official ACF documentation here](https://www.advancedcustomfields.com/resources/register-fields-via-php/#field-settings). 
+Advanced Custom Fields comes with many field types by default, all of which can be used with Flynt. The JSON properties available for each field type can be seen in the [official ACF documentation here](https://www.advancedcustomfields.com/resources/register-fields-via-php/#field-settings).

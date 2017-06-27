@@ -131,7 +131,7 @@ For example, to switch to [Smarty](http://www.smarty.net/):
 composer require smarty/smarty
 ```
 
-2\. [Create a feature](/guide/features/creating-features) named `SmartyLoader`.
+2\. [Create a feature](/guide/features/creating-features/) named `SmartyLoader`.
 
 3\. Use the `renderComponent` filter in `SmartyLoader/functions.php`:
 

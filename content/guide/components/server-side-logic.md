@@ -116,7 +116,7 @@ This data is then available in the view template for `ListLatestProducts`.
 ```
 
 ### `Flynt/dynamicSubcomponents`
-This filter allows a component to dynamically create new areas with components within them. Components can be added to the new area with exactly the same configuration options as with [Flynt page templates](/guide/configuration/page-templates). For example:
+This filter allows a component to dynamically create new areas with components within them. Components can be added to the new area with exactly the same configuration options as with [Flynt page templates](/guide/configuration/page-templates/). For example:
 
 ```php
 <?php

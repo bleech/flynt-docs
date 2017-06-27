@@ -13,8 +13,8 @@ The [Flynt Core WordPress plugin](https://github.com/flyntwp/flynt-core) is the 
 
 This plugin essentially functions as a HTML generator with two key steps:
 
-1. Given a minimal configuration, the Flynt Core plugin creates a hierarchical plan for how the site will be constructed ([the Construction Plan](/guide/core/construction-plan)).
-2. [The Construction Plan](/guide/core/construction-plan) is parsed and rendered into HTML.
+1. Given a minimal configuration, the Flynt Core plugin creates a hierarchical plan for how the site will be constructed ([the Construction Plan](/guide/core/construction-plan/)).
+2. [The Construction Plan](/guide/core/construction-plan/) is parsed and rendered into HTML.
 
 Each configuration passed to the plugin represents a single [component](/guide/components/). This configuration can also contain additional, nested component configurations, which are contained within [areas](/guide/components/what-is-component/#what-is-an-area).
 

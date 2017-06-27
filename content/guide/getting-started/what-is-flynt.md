@@ -34,6 +34,6 @@ The Flynt Framework consists of a collection of tools:
 
 ## Resources / Next Steps
 
-1. Get started by [setting up Flynt on your system](/guide/getting-started/setting-up-flynt).
+1. Get started by [setting up Flynt on your system](/guide/getting-started/setting-up-flynt/).
 2. For a guided overview on the Flynt philosophy, [watch the "Higher State of Componentness" screencast](https://www.youtube.com/watch?v=xkt18wygOks).
 3. [Github](https://github.com/flyntwp/) is the best place to ask (and answer!) technical questions.
