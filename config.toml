@@ -5,9 +5,6 @@ metadataformat = "yaml"
 canonifyurls = true
 relativeURLs = true
 
-# Enable Google Analytics by entering your tracking id
-googleAnalytics = "UA-88576792-2"
-
 [params]
   # General information
   author = "bleech GmbH"
@@ -16,7 +13,7 @@ googleAnalytics = "UA-88576792-2"
   version = "0.1.0"
   logo = "images/logo.svg"
   favicon = "/images/favicon.ico"
-
+  googleAnalytics = "UA-88576792-2"
   permalink = "#"
 
   # Custom assets
