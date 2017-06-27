@@ -52,11 +52,10 @@ As soon as you have your environment set up, follow the steps below to create a 
 
 3. Set up the virtual host provided during step 2 and you're good to go!
 
-<div class="alert alert-info">
-  <h2>Need help?</h2>
-  <p>If you are stuck or having issues setting Flynt up, leave an issue on Github for further assistance:</p>
-  <ul>
-    <li><a href="https://github.com/flyntwp/flynt-core/issues">Github - Core Plugin Issues</a></li>
-    <li><a href="https://github.com/flyntwp/flynt-starter-theme/issues">Github - Starter Theme Issues</a></li>
-  </ul>
-</div>
+## Resources / Next Steps
+
+1. Learn how to [develop your first simple Flynt component in 6 steps](https://flyntwp.com/develop-a-simple-flynt-component-in-6-steps/).
+2. Get an understanding of the [Flynt Ecosystem](https://flyntwp.com/getting-to-know-the-flynt-ecosystem/).
+3. If you are stuck or having issues setting up Flynt, leave an issue on Github for further assistance:
+  - [Github - Core Plugin Issues](https://github.com/flyntwp/flynt-core/issues)
+  - [Github - Starter Theme Issues](https://github.com/flyntwp/flynt-starter-theme/issues)
