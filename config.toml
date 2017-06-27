@@ -14,24 +14,7 @@ relativeURLs = true
   logo = "images/logo.svg"
   favicon = "/images/favicon.ico"
   googleAnalytics = "UA-88576792-2"
-  permalink = "#"
 
-  # Custom assets
-  custom_css  = []
-  custom_js   = []
-
-  # Syntax highlighting theme
-  highlight_css  = ""
-
-  [params.palette]
-    primary = "teal"
-    accent  = "blue-grey"
-
-    [params.font]
-      text = "Roboto"
-      code = "Roboto Mono"
-
-# Repository
 [params.repo]
   theme_url = "https://github.com/flyntwp/flynt-starter-theme"
   docs_url = "https://github.com/flyntwp/flynt-docs"
@@ -39,15 +22,6 @@ relativeURLs = true
 
 [params.social]
   twitter = "flyntwp"
-  facebook = "flyntwp"
-  # github  = "flyntwp"
-  # email   = "flynt@bleech.de"
-
-[blackfriday]
-  smartypants	= true
-  fractions = true
-  smartDashes = true
-  plainIDAnchors = true
 
 # Top Menu Items
 [[menu.main]]
@@ -61,7 +35,6 @@ relativeURLs = true
   weight = 40
 
 # Side Menu Items, Parent should match the identifier of the Top Menu Item
-
 [[menu.main]]
   name   = "Getting Started"
   url    = "/guide/getting-started/"
