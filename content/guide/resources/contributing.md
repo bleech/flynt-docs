@@ -10,7 +10,9 @@ menu:
     weight: 91
 ---
 
-Please submit clarifications and improvements to the documentation! If it's just a small fix, open a PR. If it's something major, please file an issue for discussion first.
+Please submit clarifications and improvements to the documentation! If it's just a small fix, open a pull request. If it's something major, please file an issue for discussion first.
+
+Whilst this page focuses on the contributing guidelines for the Flynt documentation in particular, please also take a moment to read through the full [Flynt contributing guidelines](https://github.com/flyntwp/guidelines/blob/master/CONTRIBUTING.md) and [code of conduct](https://github.com/flyntwp/guidelines/blob/master/CODE_OF_CONDUCT.md).
 
 ## Titles and Headers
 
