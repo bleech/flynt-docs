@@ -56,6 +56,6 @@ As soon as you have your environment set up, follow the steps below to create a 
 
 1. Learn how to [develop your first simple Flynt component in 6 steps](https://flyntwp.com/develop-a-simple-flynt-component-in-6-steps/).
 2. Get an understanding of the [Flynt Ecosystem](https://flyntwp.com/getting-to-know-the-flynt-ecosystem/).
-3. If you are stuck or having issues setting up Flynt, leave an issue on Github for further assistance:
+3. If you are stuck or having issues setting up Flynt, leave an issue on GitHub for further assistance:
   - [GitHub - Core Plugin Issues](https://github.com/flyntwp/flynt-core/issues)
   - [GitHub - Starter Theme Issues](https://github.com/flyntwp/flynt-starter-theme/issues)
