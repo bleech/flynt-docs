@@ -28,7 +28,7 @@ add_action('after_setup_theme', __NAMESPACE__ . '\\initTheme');
 
 That's it. Flynt will now initialize `Features\CustomPostTypes\functions.php` on the `after_setup_theme` hook. [This hook is called during each page load, after the theme is initialized.](https://codex.wordpress.org/Plugin_API/Action_Reference/after_setup_theme)
 
-It is also possible to pass parameters to features. Paramaters are passed as an array in the second argument of the `add_theme_support` function. For example:
+It is also possible to pass parameters to features. Parameters are passed as an array in the second argument of the `add_theme_support` function. For example:
 
 ```php
 <?php
