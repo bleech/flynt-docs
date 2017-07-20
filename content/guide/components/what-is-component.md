@@ -58,7 +58,7 @@ Components are always categorized according to their predominant use case. This 
   <ul>
     <li>
       <strong>Accordion</strong><br>
-      For collapsable content, e.g. FAQs.
+      For collapsible content, e.g. FAQs.
     </li>
     <li>
       <strong>Block</strong><br>
@@ -74,7 +74,7 @@ Components are always categorized according to their predominant use case. This 
     </li>
     <li>
       <strong>Document</strong><br>
-      A HTML document.
+      An HTML document.
     </li>
     <li>
       <strong>Form</strong><br>
