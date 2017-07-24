@@ -33,7 +33,6 @@ const gulp = require('gulp')
 const gulpIf = require('gulp-if')
 const handleErrors = require('../utils/handleErrors')
 const path = require('path')
-const rupture = require('rupture')
 const sourcemaps = require('gulp-sourcemaps')
 const sass = require('gulp-sass')
 
@@ -46,7 +45,6 @@ module.exports = function (config) {
     .pipe(sass({
       compress: isProduction,
       use: [
-        rupture(),
         autoprefixer()
       ],
       import: [
